@@ -2,122 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/destinationRule/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/envoyFilter/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/gateway/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/serviceEntry/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/sidecar/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/virtualService/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/workloadEntry/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1alpha3/workloadGroup/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1beta1/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1beta1/destinationRule/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1beta1/gateway/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1beta1/serviceEntry/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1beta1/sidecar/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1beta1/virtualService/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/networking/v1beta1/workloadEntry/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/security/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/security/v1beta1/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/security/v1beta1/authorizationPolicy/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/security/v1beta1/peerAuthentication/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.8/security/v1beta1/requestAuthentication/</loc>
-         <lastmod>2021-07-02</lastmod>
+         <lastmod>2021-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
