@@ -18,4 +18,4 @@ permalink: /1.8/networking/v1alpha3/envoyFilter/
 new(name)
 ```
 
-new returns an instance of Envoyfilter
+new returns an instance of EnvoyFilter

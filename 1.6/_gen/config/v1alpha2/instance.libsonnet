@@ -4,7 +4,7 @@
   '#new':: d.fn(help='new returns an instance of Instance', args=[d.arg(name='name', type=d.T.string)]),
   new(name): {
     apiVersion: 'config.istio.io/v1alpha2',
-    kind: 'Instance',
+    kind: 'instance',
   } + self.metadata.withName(name=name),
   '#mixin': 'ignore',
   mixin: self,
