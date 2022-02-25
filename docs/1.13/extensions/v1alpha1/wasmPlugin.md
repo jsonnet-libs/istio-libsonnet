@@ -36,6 +36,7 @@ permalink: /1.13/extensions/v1alpha1/wasmPlugin/
   * [`fn withImagePullSecret(imagePullSecret)`](#fn-specwithimagepullsecret)
   * [`fn withPhase(phase)`](#fn-specwithphase)
   * [`fn withPluginConfig(pluginConfig)`](#fn-specwithpluginconfig)
+  * [`fn withPluginConfigMixin(pluginConfig)`](#fn-specwithpluginconfigmixin)
   * [`fn withPluginName(pluginName)`](#fn-specwithpluginname)
   * [`fn withPriority(priority)`](#fn-specwithpriority)
   * [`fn withSha256(sha256)`](#fn-specwithsha256)
@@ -272,6 +273,16 @@ withPluginConfig(pluginConfig)
 ```
 
 "The configuration that will be passed on to the plugin."
+
+### fn spec.withPluginConfigMixin
+
+```ts
+withPluginConfigMixin(pluginConfig)
+```
+
+"The configuration that will be passed on to the plugin."
+
+**Note:** This function appends passed data to existing values
 
 ### fn spec.withPluginName
 

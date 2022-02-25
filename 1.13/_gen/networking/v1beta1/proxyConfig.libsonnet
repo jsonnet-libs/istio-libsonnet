@@ -65,7 +65,7 @@
       '#withMatchLabelsMixin':: d.fn(help='\n\n**Note:** This function appends passed data to existing values', args=[d.arg(name='matchLabels', type=d.T.object)]),
       withMatchLabelsMixin(matchLabels): { spec+: { selector+: { matchLabels+: matchLabels } } },
     },
-    '#withConcurrency':: d.fn(help='"The number of worker threads to run."', args=[d.arg(name='concurrency', type=d.T.any)]),
+    '#withConcurrency':: d.fn(help='"The number of worker threads to run."', args=[d.arg(name='concurrency', type=d.T.integer)]),
     withConcurrency(concurrency): { spec+: { concurrency: concurrency } },
     '#withEnvironmentVariables':: d.fn(help='"Additional environment variables for the proxy."', args=[d.arg(name='environmentVariables', type=d.T.object)]),
     withEnvironmentVariables(environmentVariables): { spec+: { environmentVariables: environmentVariables } },
