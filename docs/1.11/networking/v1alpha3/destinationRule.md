@@ -22,8 +22,6 @@ permalink: /1.11/networking/v1alpha3/destinationRule/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -37,6 +35,134 @@ permalink: /1.11/networking/v1alpha3/destinationRule/
   * [`fn withHost(host)`](#fn-specwithhost)
   * [`fn withSubsets(subsets)`](#fn-specwithsubsets)
   * [`fn withSubsetsMixin(subsets)`](#fn-specwithsubsetsmixin)
+  * [`obj spec.subsets`](#obj-specsubsets)
+    * [`fn withLabels(labels)`](#fn-specsubsetswithlabels)
+    * [`fn withLabelsMixin(labels)`](#fn-specsubsetswithlabelsmixin)
+    * [`fn withName(name)`](#fn-specsubsetswithname)
+    * [`obj spec.subsets.trafficPolicy`](#obj-specsubsetstrafficpolicy)
+      * [`fn withPortLevelSettings(portLevelSettings)`](#fn-specsubsetstrafficpolicywithportlevelsettings)
+      * [`fn withPortLevelSettingsMixin(portLevelSettings)`](#fn-specsubsetstrafficpolicywithportlevelsettingsmixin)
+      * [`obj spec.subsets.trafficPolicy.connectionPool`](#obj-specsubsetstrafficpolicyconnectionpool)
+        * [`obj spec.subsets.trafficPolicy.connectionPool.http`](#obj-specsubsetstrafficpolicyconnectionpoolhttp)
+          * [`fn withH2UpgradePolicy(h2UpgradePolicy)`](#fn-specsubsetstrafficpolicyconnectionpoolhttpwithh2upgradepolicy)
+          * [`fn withHttp1MaxPendingRequests(http1MaxPendingRequests)`](#fn-specsubsetstrafficpolicyconnectionpoolhttpwithhttp1maxpendingrequests)
+          * [`fn withHttp2MaxRequests(http2MaxRequests)`](#fn-specsubsetstrafficpolicyconnectionpoolhttpwithhttp2maxrequests)
+          * [`fn withIdleTimeout(idleTimeout)`](#fn-specsubsetstrafficpolicyconnectionpoolhttpwithidletimeout)
+          * [`fn withMaxRequestsPerConnection(maxRequestsPerConnection)`](#fn-specsubsetstrafficpolicyconnectionpoolhttpwithmaxrequestsperconnection)
+          * [`fn withMaxRetries(maxRetries)`](#fn-specsubsetstrafficpolicyconnectionpoolhttpwithmaxretries)
+          * [`fn withUseClientProtocol(useClientProtocol)`](#fn-specsubsetstrafficpolicyconnectionpoolhttpwithuseclientprotocol)
+        * [`obj spec.subsets.trafficPolicy.connectionPool.tcp`](#obj-specsubsetstrafficpolicyconnectionpooltcp)
+          * [`fn withConnectTimeout(connectTimeout)`](#fn-specsubsetstrafficpolicyconnectionpooltcpwithconnecttimeout)
+          * [`fn withMaxConnections(maxConnections)`](#fn-specsubsetstrafficpolicyconnectionpooltcpwithmaxconnections)
+          * [`obj spec.subsets.trafficPolicy.connectionPool.tcp.tcpKeepalive`](#obj-specsubsetstrafficpolicyconnectionpooltcptcpkeepalive)
+            * [`fn withInterval(interval)`](#fn-specsubsetstrafficpolicyconnectionpooltcptcpkeepalivewithinterval)
+            * [`fn withProbes(probes)`](#fn-specsubsetstrafficpolicyconnectionpooltcptcpkeepalivewithprobes)
+            * [`fn withTime(time)`](#fn-specsubsetstrafficpolicyconnectionpooltcptcpkeepalivewithtime)
+      * [`obj spec.subsets.trafficPolicy.loadBalancer`](#obj-specsubsetstrafficpolicyloadbalancer)
+        * [`fn withSimple(simple)`](#fn-specsubsetstrafficpolicyloadbalancerwithsimple)
+        * [`obj spec.subsets.trafficPolicy.loadBalancer.consistentHash`](#obj-specsubsetstrafficpolicyloadbalancerconsistenthash)
+          * [`fn withHttpHeaderName(httpHeaderName)`](#fn-specsubsetstrafficpolicyloadbalancerconsistenthashwithhttpheadername)
+          * [`fn withHttpQueryParameterName(httpQueryParameterName)`](#fn-specsubsetstrafficpolicyloadbalancerconsistenthashwithhttpqueryparametername)
+          * [`fn withMinimumRingSize(minimumRingSize)`](#fn-specsubsetstrafficpolicyloadbalancerconsistenthashwithminimumringsize)
+          * [`fn withUseSourceIp(useSourceIp)`](#fn-specsubsetstrafficpolicyloadbalancerconsistenthashwithusesourceip)
+          * [`obj spec.subsets.trafficPolicy.loadBalancer.consistentHash.httpCookie`](#obj-specsubsetstrafficpolicyloadbalancerconsistenthashhttpcookie)
+            * [`fn withName(name)`](#fn-specsubsetstrafficpolicyloadbalancerconsistenthashhttpcookiewithname)
+            * [`fn withPath(path)`](#fn-specsubsetstrafficpolicyloadbalancerconsistenthashhttpcookiewithpath)
+            * [`fn withTtl(ttl)`](#fn-specsubsetstrafficpolicyloadbalancerconsistenthashhttpcookiewithttl)
+        * [`obj spec.subsets.trafficPolicy.loadBalancer.localityLbSetting`](#obj-specsubsetstrafficpolicyloadbalancerlocalitylbsetting)
+          * [`fn withDistribute(distribute)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingwithdistribute)
+          * [`fn withDistributeMixin(distribute)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingwithdistributemixin)
+          * [`fn withEnabled(enabled)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingwithenabled)
+          * [`fn withFailover(failover)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingwithfailover)
+          * [`fn withFailoverMixin(failover)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingwithfailovermixin)
+          * [`obj spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.distribute`](#obj-specsubsetstrafficpolicyloadbalancerlocalitylbsettingdistribute)
+            * [`fn withFrom(from)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingdistributewithfrom)
+            * [`fn withTo(to)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingdistributewithto)
+            * [`fn withToMixin(to)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingdistributewithtomixin)
+          * [`obj spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.failover`](#obj-specsubsetstrafficpolicyloadbalancerlocalitylbsettingfailover)
+            * [`fn withFrom(from)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingfailoverwithfrom)
+            * [`fn withTo(to)`](#fn-specsubsetstrafficpolicyloadbalancerlocalitylbsettingfailoverwithto)
+      * [`obj spec.subsets.trafficPolicy.outlierDetection`](#obj-specsubsetstrafficpolicyoutlierdetection)
+        * [`fn withBaseEjectionTime(baseEjectionTime)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithbaseejectiontime)
+        * [`fn withConsecutive5xxErrors(consecutive5xxErrors)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithconsecutive5xxerrors)
+        * [`fn withConsecutiveErrors(consecutiveErrors)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithconsecutiveerrors)
+        * [`fn withConsecutiveGatewayErrors(consecutiveGatewayErrors)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithconsecutivegatewayerrors)
+        * [`fn withConsecutiveLocalOriginFailures(consecutiveLocalOriginFailures)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithconsecutivelocaloriginfailures)
+        * [`fn withInterval(interval)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithinterval)
+        * [`fn withMaxEjectionPercent(maxEjectionPercent)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithmaxejectionpercent)
+        * [`fn withMinHealthPercent(minHealthPercent)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithminhealthpercent)
+        * [`fn withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)`](#fn-specsubsetstrafficpolicyoutlierdetectionwithsplitexternallocaloriginerrors)
+      * [`obj spec.subsets.trafficPolicy.portLevelSettings`](#obj-specsubsetstrafficpolicyportlevelsettings)
+        * [`obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool`](#obj-specsubsetstrafficpolicyportlevelsettingsconnectionpool)
+          * [`obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http`](#obj-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttp)
+            * [`fn withH2UpgradePolicy(h2UpgradePolicy)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttpwithh2upgradepolicy)
+            * [`fn withHttp1MaxPendingRequests(http1MaxPendingRequests)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttpwithhttp1maxpendingrequests)
+            * [`fn withHttp2MaxRequests(http2MaxRequests)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttpwithhttp2maxrequests)
+            * [`fn withIdleTimeout(idleTimeout)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttpwithidletimeout)
+            * [`fn withMaxRequestsPerConnection(maxRequestsPerConnection)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttpwithmaxrequestsperconnection)
+            * [`fn withMaxRetries(maxRetries)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttpwithmaxretries)
+            * [`fn withUseClientProtocol(useClientProtocol)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpoolhttpwithuseclientprotocol)
+          * [`obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp`](#obj-specsubsetstrafficpolicyportlevelsettingsconnectionpooltcp)
+            * [`fn withConnectTimeout(connectTimeout)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpooltcpwithconnecttimeout)
+            * [`fn withMaxConnections(maxConnections)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpooltcpwithmaxconnections)
+            * [`obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive`](#obj-specsubsetstrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalive)
+              * [`fn withInterval(interval)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalivewithinterval)
+              * [`fn withProbes(probes)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalivewithprobes)
+              * [`fn withTime(time)`](#fn-specsubsetstrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalivewithtime)
+        * [`obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer`](#obj-specsubsetstrafficpolicyportlevelsettingsloadbalancer)
+          * [`fn withSimple(simple)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerwithsimple)
+          * [`obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash`](#obj-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthash)
+            * [`fn withHttpHeaderName(httpHeaderName)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashwithhttpheadername)
+            * [`fn withHttpQueryParameterName(httpQueryParameterName)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashwithhttpqueryparametername)
+            * [`fn withMinimumRingSize(minimumRingSize)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashwithminimumringsize)
+            * [`fn withUseSourceIp(useSourceIp)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashwithusesourceip)
+            * [`obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie`](#obj-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookie)
+              * [`fn withName(name)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookiewithname)
+              * [`fn withPath(path)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookiewithpath)
+              * [`fn withTtl(ttl)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookiewithttl)
+          * [`obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting`](#obj-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsetting)
+            * [`fn withDistribute(distribute)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithdistribute)
+            * [`fn withDistributeMixin(distribute)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithdistributemixin)
+            * [`fn withEnabled(enabled)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithenabled)
+            * [`fn withFailover(failover)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithfailover)
+            * [`fn withFailoverMixin(failover)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithfailovermixin)
+            * [`obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute`](#obj-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistribute)
+              * [`fn withFrom(from)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistributewithfrom)
+              * [`fn withTo(to)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistributewithto)
+              * [`fn withToMixin(to)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistributewithtomixin)
+            * [`obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover`](#obj-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingfailover)
+              * [`fn withFrom(from)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingfailoverwithfrom)
+              * [`fn withTo(to)`](#fn-specsubsetstrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingfailoverwithto)
+        * [`obj spec.subsets.trafficPolicy.portLevelSettings.outlierDetection`](#obj-specsubsetstrafficpolicyportlevelsettingsoutlierdetection)
+          * [`fn withBaseEjectionTime(baseEjectionTime)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithbaseejectiontime)
+          * [`fn withConsecutive5xxErrors(consecutive5xxErrors)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithconsecutive5xxerrors)
+          * [`fn withConsecutiveErrors(consecutiveErrors)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithconsecutiveerrors)
+          * [`fn withConsecutiveGatewayErrors(consecutiveGatewayErrors)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithconsecutivegatewayerrors)
+          * [`fn withConsecutiveLocalOriginFailures(consecutiveLocalOriginFailures)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithconsecutivelocaloriginfailures)
+          * [`fn withInterval(interval)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithinterval)
+          * [`fn withMaxEjectionPercent(maxEjectionPercent)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithmaxejectionpercent)
+          * [`fn withMinHealthPercent(minHealthPercent)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithminhealthpercent)
+          * [`fn withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)`](#fn-specsubsetstrafficpolicyportlevelsettingsoutlierdetectionwithsplitexternallocaloriginerrors)
+        * [`obj spec.subsets.trafficPolicy.portLevelSettings.port`](#obj-specsubsetstrafficpolicyportlevelsettingsport)
+          * [`fn withNumber(number)`](#fn-specsubsetstrafficpolicyportlevelsettingsportwithnumber)
+        * [`obj spec.subsets.trafficPolicy.portLevelSettings.tls`](#obj-specsubsetstrafficpolicyportlevelsettingstls)
+          * [`fn withCaCertificates(caCertificates)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithcacertificates)
+          * [`fn withClientCertificate(clientCertificate)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithclientcertificate)
+          * [`fn withCredentialName(credentialName)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithcredentialname)
+          * [`fn withMode(mode)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithmode)
+          * [`fn withPrivateKey(privateKey)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithprivatekey)
+          * [`fn withSni(sni)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithsni)
+          * [`fn withSubjectAltNames(subjectAltNames)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithsubjectaltnames)
+          * [`fn withSubjectAltNamesMixin(subjectAltNames)`](#fn-specsubsetstrafficpolicyportlevelsettingstlswithsubjectaltnamesmixin)
+      * [`obj spec.subsets.trafficPolicy.tls`](#obj-specsubsetstrafficpolicytls)
+        * [`fn withCaCertificates(caCertificates)`](#fn-specsubsetstrafficpolicytlswithcacertificates)
+        * [`fn withClientCertificate(clientCertificate)`](#fn-specsubsetstrafficpolicytlswithclientcertificate)
+        * [`fn withCredentialName(credentialName)`](#fn-specsubsetstrafficpolicytlswithcredentialname)
+        * [`fn withMode(mode)`](#fn-specsubsetstrafficpolicytlswithmode)
+        * [`fn withPrivateKey(privateKey)`](#fn-specsubsetstrafficpolicytlswithprivatekey)
+        * [`fn withSni(sni)`](#fn-specsubsetstrafficpolicytlswithsni)
+        * [`fn withSubjectAltNames(subjectAltNames)`](#fn-specsubsetstrafficpolicytlswithsubjectaltnames)
+        * [`fn withSubjectAltNamesMixin(subjectAltNames)`](#fn-specsubsetstrafficpolicytlswithsubjectaltnamesmixin)
   * [`obj spec.trafficPolicy`](#obj-spectrafficpolicy)
     * [`fn withPortLevelSettings(portLevelSettings)`](#fn-spectrafficpolicywithportlevelsettings)
     * [`fn withPortLevelSettingsMixin(portLevelSettings)`](#fn-spectrafficpolicywithportlevelsettingsmixin)
@@ -73,6 +199,13 @@ permalink: /1.11/networking/v1alpha3/destinationRule/
         * [`fn withEnabled(enabled)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingwithenabled)
         * [`fn withFailover(failover)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingwithfailover)
         * [`fn withFailoverMixin(failover)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingwithfailovermixin)
+        * [`obj spec.trafficPolicy.loadBalancer.localityLbSetting.distribute`](#obj-spectrafficpolicyloadbalancerlocalitylbsettingdistribute)
+          * [`fn withFrom(from)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingdistributewithfrom)
+          * [`fn withTo(to)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingdistributewithto)
+          * [`fn withToMixin(to)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingdistributewithtomixin)
+        * [`obj spec.trafficPolicy.loadBalancer.localityLbSetting.failover`](#obj-spectrafficpolicyloadbalancerlocalitylbsettingfailover)
+          * [`fn withFrom(from)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingfailoverwithfrom)
+          * [`fn withTo(to)`](#fn-spectrafficpolicyloadbalancerlocalitylbsettingfailoverwithto)
     * [`obj spec.trafficPolicy.outlierDetection`](#obj-spectrafficpolicyoutlierdetection)
       * [`fn withBaseEjectionTime(baseEjectionTime)`](#fn-spectrafficpolicyoutlierdetectionwithbaseejectiontime)
       * [`fn withConsecutive5xxErrors(consecutive5xxErrors)`](#fn-spectrafficpolicyoutlierdetectionwithconsecutive5xxerrors)
@@ -83,6 +216,68 @@ permalink: /1.11/networking/v1alpha3/destinationRule/
       * [`fn withMaxEjectionPercent(maxEjectionPercent)`](#fn-spectrafficpolicyoutlierdetectionwithmaxejectionpercent)
       * [`fn withMinHealthPercent(minHealthPercent)`](#fn-spectrafficpolicyoutlierdetectionwithminhealthpercent)
       * [`fn withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)`](#fn-spectrafficpolicyoutlierdetectionwithsplitexternallocaloriginerrors)
+    * [`obj spec.trafficPolicy.portLevelSettings`](#obj-spectrafficpolicyportlevelsettings)
+      * [`obj spec.trafficPolicy.portLevelSettings.connectionPool`](#obj-spectrafficpolicyportlevelsettingsconnectionpool)
+        * [`obj spec.trafficPolicy.portLevelSettings.connectionPool.http`](#obj-spectrafficpolicyportlevelsettingsconnectionpoolhttp)
+          * [`fn withH2UpgradePolicy(h2UpgradePolicy)`](#fn-spectrafficpolicyportlevelsettingsconnectionpoolhttpwithh2upgradepolicy)
+          * [`fn withHttp1MaxPendingRequests(http1MaxPendingRequests)`](#fn-spectrafficpolicyportlevelsettingsconnectionpoolhttpwithhttp1maxpendingrequests)
+          * [`fn withHttp2MaxRequests(http2MaxRequests)`](#fn-spectrafficpolicyportlevelsettingsconnectionpoolhttpwithhttp2maxrequests)
+          * [`fn withIdleTimeout(idleTimeout)`](#fn-spectrafficpolicyportlevelsettingsconnectionpoolhttpwithidletimeout)
+          * [`fn withMaxRequestsPerConnection(maxRequestsPerConnection)`](#fn-spectrafficpolicyportlevelsettingsconnectionpoolhttpwithmaxrequestsperconnection)
+          * [`fn withMaxRetries(maxRetries)`](#fn-spectrafficpolicyportlevelsettingsconnectionpoolhttpwithmaxretries)
+          * [`fn withUseClientProtocol(useClientProtocol)`](#fn-spectrafficpolicyportlevelsettingsconnectionpoolhttpwithuseclientprotocol)
+        * [`obj spec.trafficPolicy.portLevelSettings.connectionPool.tcp`](#obj-spectrafficpolicyportlevelsettingsconnectionpooltcp)
+          * [`fn withConnectTimeout(connectTimeout)`](#fn-spectrafficpolicyportlevelsettingsconnectionpooltcpwithconnecttimeout)
+          * [`fn withMaxConnections(maxConnections)`](#fn-spectrafficpolicyportlevelsettingsconnectionpooltcpwithmaxconnections)
+          * [`obj spec.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive`](#obj-spectrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalive)
+            * [`fn withInterval(interval)`](#fn-spectrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalivewithinterval)
+            * [`fn withProbes(probes)`](#fn-spectrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalivewithprobes)
+            * [`fn withTime(time)`](#fn-spectrafficpolicyportlevelsettingsconnectionpooltcptcpkeepalivewithtime)
+      * [`obj spec.trafficPolicy.portLevelSettings.loadBalancer`](#obj-spectrafficpolicyportlevelsettingsloadbalancer)
+        * [`fn withSimple(simple)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerwithsimple)
+        * [`obj spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash`](#obj-spectrafficpolicyportlevelsettingsloadbalancerconsistenthash)
+          * [`fn withHttpHeaderName(httpHeaderName)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashwithhttpheadername)
+          * [`fn withHttpQueryParameterName(httpQueryParameterName)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashwithhttpqueryparametername)
+          * [`fn withMinimumRingSize(minimumRingSize)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashwithminimumringsize)
+          * [`fn withUseSourceIp(useSourceIp)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashwithusesourceip)
+          * [`obj spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie`](#obj-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookie)
+            * [`fn withName(name)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookiewithname)
+            * [`fn withPath(path)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookiewithpath)
+            * [`fn withTtl(ttl)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerconsistenthashhttpcookiewithttl)
+        * [`obj spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting`](#obj-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsetting)
+          * [`fn withDistribute(distribute)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithdistribute)
+          * [`fn withDistributeMixin(distribute)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithdistributemixin)
+          * [`fn withEnabled(enabled)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithenabled)
+          * [`fn withFailover(failover)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithfailover)
+          * [`fn withFailoverMixin(failover)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingwithfailovermixin)
+          * [`obj spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute`](#obj-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistribute)
+            * [`fn withFrom(from)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistributewithfrom)
+            * [`fn withTo(to)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistributewithto)
+            * [`fn withToMixin(to)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingdistributewithtomixin)
+          * [`obj spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover`](#obj-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingfailover)
+            * [`fn withFrom(from)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingfailoverwithfrom)
+            * [`fn withTo(to)`](#fn-spectrafficpolicyportlevelsettingsloadbalancerlocalitylbsettingfailoverwithto)
+      * [`obj spec.trafficPolicy.portLevelSettings.outlierDetection`](#obj-spectrafficpolicyportlevelsettingsoutlierdetection)
+        * [`fn withBaseEjectionTime(baseEjectionTime)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithbaseejectiontime)
+        * [`fn withConsecutive5xxErrors(consecutive5xxErrors)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithconsecutive5xxerrors)
+        * [`fn withConsecutiveErrors(consecutiveErrors)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithconsecutiveerrors)
+        * [`fn withConsecutiveGatewayErrors(consecutiveGatewayErrors)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithconsecutivegatewayerrors)
+        * [`fn withConsecutiveLocalOriginFailures(consecutiveLocalOriginFailures)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithconsecutivelocaloriginfailures)
+        * [`fn withInterval(interval)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithinterval)
+        * [`fn withMaxEjectionPercent(maxEjectionPercent)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithmaxejectionpercent)
+        * [`fn withMinHealthPercent(minHealthPercent)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithminhealthpercent)
+        * [`fn withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)`](#fn-spectrafficpolicyportlevelsettingsoutlierdetectionwithsplitexternallocaloriginerrors)
+      * [`obj spec.trafficPolicy.portLevelSettings.port`](#obj-spectrafficpolicyportlevelsettingsport)
+        * [`fn withNumber(number)`](#fn-spectrafficpolicyportlevelsettingsportwithnumber)
+      * [`obj spec.trafficPolicy.portLevelSettings.tls`](#obj-spectrafficpolicyportlevelsettingstls)
+        * [`fn withCaCertificates(caCertificates)`](#fn-spectrafficpolicyportlevelsettingstlswithcacertificates)
+        * [`fn withClientCertificate(clientCertificate)`](#fn-spectrafficpolicyportlevelsettingstlswithclientcertificate)
+        * [`fn withCredentialName(credentialName)`](#fn-spectrafficpolicyportlevelsettingstlswithcredentialname)
+        * [`fn withMode(mode)`](#fn-spectrafficpolicyportlevelsettingstlswithmode)
+        * [`fn withPrivateKey(privateKey)`](#fn-spectrafficpolicyportlevelsettingstlswithprivatekey)
+        * [`fn withSni(sni)`](#fn-spectrafficpolicyportlevelsettingstlswithsni)
+        * [`fn withSubjectAltNames(subjectAltNames)`](#fn-spectrafficpolicyportlevelsettingstlswithsubjectaltnames)
+        * [`fn withSubjectAltNamesMixin(subjectAltNames)`](#fn-spectrafficpolicyportlevelsettingstlswithsubjectaltnamesmixin)
     * [`obj spec.trafficPolicy.tls`](#obj-spectrafficpolicytls)
       * [`fn withCaCertificates(caCertificates)`](#fn-spectrafficpolicytlswithcacertificates)
       * [`fn withClientCertificate(clientCertificate)`](#fn-spectrafficpolicytlswithclientcertificate)
@@ -209,24 +404,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -327,6 +504,938 @@ withSubsets(subsets)
 
 ```ts
 withSubsetsMixin(subsets)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.subsets
+
+
+
+### fn spec.subsets.withLabels
+
+```ts
+withLabels(labels)
+```
+
+
+
+### fn spec.subsets.withLabelsMixin
+
+```ts
+withLabelsMixin(labels)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.subsets.withName
+
+```ts
+withName(name)
+```
+
+"Name of the subset."
+
+## obj spec.subsets.trafficPolicy
+
+"Traffic policies that apply to this subset."
+
+### fn spec.subsets.trafficPolicy.withPortLevelSettings
+
+```ts
+withPortLevelSettings(portLevelSettings)
+```
+
+"Traffic policies specific to individual ports."
+
+### fn spec.subsets.trafficPolicy.withPortLevelSettingsMixin
+
+```ts
+withPortLevelSettingsMixin(portLevelSettings)
+```
+
+"Traffic policies specific to individual ports."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.subsets.trafficPolicy.connectionPool
+
+
+
+## obj spec.subsets.trafficPolicy.connectionPool.http
+
+"HTTP connection pool settings."
+
+### fn spec.subsets.trafficPolicy.connectionPool.http.withH2UpgradePolicy
+
+```ts
+withH2UpgradePolicy(h2UpgradePolicy)
+```
+
+"Specify if http1.1 connection should be upgraded to http2 for the associated destination."
+
+### fn spec.subsets.trafficPolicy.connectionPool.http.withHttp1MaxPendingRequests
+
+```ts
+withHttp1MaxPendingRequests(http1MaxPendingRequests)
+```
+
+"Maximum number of pending HTTP requests to a destination."
+
+### fn spec.subsets.trafficPolicy.connectionPool.http.withHttp2MaxRequests
+
+```ts
+withHttp2MaxRequests(http2MaxRequests)
+```
+
+"Maximum number of requests to a backend."
+
+### fn spec.subsets.trafficPolicy.connectionPool.http.withIdleTimeout
+
+```ts
+withIdleTimeout(idleTimeout)
+```
+
+"The idle timeout for upstream connection pool connections."
+
+### fn spec.subsets.trafficPolicy.connectionPool.http.withMaxRequestsPerConnection
+
+```ts
+withMaxRequestsPerConnection(maxRequestsPerConnection)
+```
+
+"Maximum number of requests per connection to a backend."
+
+### fn spec.subsets.trafficPolicy.connectionPool.http.withMaxRetries
+
+```ts
+withMaxRetries(maxRetries)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.connectionPool.http.withUseClientProtocol
+
+```ts
+withUseClientProtocol(useClientProtocol)
+```
+
+"If set to true, client protocol will be preserved while initiating connection to backend."
+
+## obj spec.subsets.trafficPolicy.connectionPool.tcp
+
+"Settings common to both HTTP and TCP upstream connections."
+
+### fn spec.subsets.trafficPolicy.connectionPool.tcp.withConnectTimeout
+
+```ts
+withConnectTimeout(connectTimeout)
+```
+
+"TCP connection timeout."
+
+### fn spec.subsets.trafficPolicy.connectionPool.tcp.withMaxConnections
+
+```ts
+withMaxConnections(maxConnections)
+```
+
+"Maximum number of HTTP1 /TCP connections to a destination host."
+
+## obj spec.subsets.trafficPolicy.connectionPool.tcp.tcpKeepalive
+
+"If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives."
+
+### fn spec.subsets.trafficPolicy.connectionPool.tcp.tcpKeepalive.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"The time duration between keep-alive probes."
+
+### fn spec.subsets.trafficPolicy.connectionPool.tcp.tcpKeepalive.withProbes
+
+```ts
+withProbes(probes)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.connectionPool.tcp.tcpKeepalive.withTime
+
+```ts
+withTime(time)
+```
+
+
+
+## obj spec.subsets.trafficPolicy.loadBalancer
+
+"Settings controlling the load balancer algorithms."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.withSimple
+
+```ts
+withSimple(simple)
+```
+
+
+
+## obj spec.subsets.trafficPolicy.loadBalancer.consistentHash
+
+
+
+### fn spec.subsets.trafficPolicy.loadBalancer.consistentHash.withHttpHeaderName
+
+```ts
+withHttpHeaderName(httpHeaderName)
+```
+
+"Hash based on a specific HTTP header."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.consistentHash.withHttpQueryParameterName
+
+```ts
+withHttpQueryParameterName(httpQueryParameterName)
+```
+
+"Hash based on a specific HTTP query parameter."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.consistentHash.withMinimumRingSize
+
+```ts
+withMinimumRingSize(minimumRingSize)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.loadBalancer.consistentHash.withUseSourceIp
+
+```ts
+withUseSourceIp(useSourceIp)
+```
+
+"Hash based on the source IP address."
+
+## obj spec.subsets.trafficPolicy.loadBalancer.consistentHash.httpCookie
+
+"Hash based on HTTP cookie."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.consistentHash.httpCookie.withName
+
+```ts
+withName(name)
+```
+
+"Name of the cookie."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.consistentHash.httpCookie.withPath
+
+```ts
+withPath(path)
+```
+
+"Path to set for the cookie."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.consistentHash.httpCookie.withTtl
+
+```ts
+withTtl(ttl)
+```
+
+"Lifetime of the cookie."
+
+## obj spec.subsets.trafficPolicy.loadBalancer.localityLbSetting
+
+
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.withDistribute
+
+```ts
+withDistribute(distribute)
+```
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.withDistributeMixin
+
+```ts
+withDistributeMixin(distribute)
+```
+
+"Optional: only one of distribute or failover can be set."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.withEnabled
+
+```ts
+withEnabled(enabled)
+```
+
+"enable locality load balancing, this is DestinationRule-level and will override mesh wide settings in entirety."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.withFailover
+
+```ts
+withFailover(failover)
+```
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.withFailoverMixin
+
+```ts
+withFailoverMixin(failover)
+```
+
+"Optional: only failover or distribute can be set."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.distribute
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.distribute.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating locality, '/' separated, e.g."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.distribute.withTo
+
+```ts
+withTo(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.distribute.withToMixin
+
+```ts
+withToMixin(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.failover
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.failover.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating region."
+
+### fn spec.subsets.trafficPolicy.loadBalancer.localityLbSetting.failover.withTo
+
+```ts
+withTo(to)
+```
+
+
+
+## obj spec.subsets.trafficPolicy.outlierDetection
+
+
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withBaseEjectionTime
+
+```ts
+withBaseEjectionTime(baseEjectionTime)
+```
+
+"Minimum ejection duration."
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withConsecutive5xxErrors
+
+```ts
+withConsecutive5xxErrors(consecutive5xxErrors)
+```
+
+"Number of 5xx errors before a host is ejected from the connection pool."
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withConsecutiveErrors
+
+```ts
+withConsecutiveErrors(consecutiveErrors)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withConsecutiveGatewayErrors
+
+```ts
+withConsecutiveGatewayErrors(consecutiveGatewayErrors)
+```
+
+"Number of gateway errors before a host is ejected from the connection pool."
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withConsecutiveLocalOriginFailures
+
+```ts
+withConsecutiveLocalOriginFailures(consecutiveLocalOriginFailures)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"Time interval between ejection sweep analysis."
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withMaxEjectionPercent
+
+```ts
+withMaxEjectionPercent(maxEjectionPercent)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withMinHealthPercent
+
+```ts
+withMinHealthPercent(minHealthPercent)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.outlierDetection.withSplitExternalLocalOriginErrors
+
+```ts
+withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)
+```
+
+"Determines whether to distinguish local origin failures from external errors."
+
+## obj spec.subsets.trafficPolicy.portLevelSettings
+
+"Traffic policies specific to individual ports."
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool
+
+
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http
+
+"HTTP connection pool settings."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.withH2UpgradePolicy
+
+```ts
+withH2UpgradePolicy(h2UpgradePolicy)
+```
+
+"Specify if http1.1 connection should be upgraded to http2 for the associated destination."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.withHttp1MaxPendingRequests
+
+```ts
+withHttp1MaxPendingRequests(http1MaxPendingRequests)
+```
+
+"Maximum number of pending HTTP requests to a destination."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.withHttp2MaxRequests
+
+```ts
+withHttp2MaxRequests(http2MaxRequests)
+```
+
+"Maximum number of requests to a backend."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.withIdleTimeout
+
+```ts
+withIdleTimeout(idleTimeout)
+```
+
+"The idle timeout for upstream connection pool connections."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.withMaxRequestsPerConnection
+
+```ts
+withMaxRequestsPerConnection(maxRequestsPerConnection)
+```
+
+"Maximum number of requests per connection to a backend."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.withMaxRetries
+
+```ts
+withMaxRetries(maxRetries)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.http.withUseClientProtocol
+
+```ts
+withUseClientProtocol(useClientProtocol)
+```
+
+"If set to true, client protocol will be preserved while initiating connection to backend."
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp
+
+"Settings common to both HTTP and TCP upstream connections."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.withConnectTimeout
+
+```ts
+withConnectTimeout(connectTimeout)
+```
+
+"TCP connection timeout."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.withMaxConnections
+
+```ts
+withMaxConnections(maxConnections)
+```
+
+"Maximum number of HTTP1 /TCP connections to a destination host."
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive
+
+"If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"The time duration between keep-alive probes."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.withProbes
+
+```ts
+withProbes(probes)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.withTime
+
+```ts
+withTime(time)
+```
+
+
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer
+
+"Settings controlling the load balancer algorithms."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.withSimple
+
+```ts
+withSimple(simple)
+```
+
+
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withHttpHeaderName
+
+```ts
+withHttpHeaderName(httpHeaderName)
+```
+
+"Hash based on a specific HTTP header."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withHttpQueryParameterName
+
+```ts
+withHttpQueryParameterName(httpQueryParameterName)
+```
+
+"Hash based on a specific HTTP query parameter."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withMinimumRingSize
+
+```ts
+withMinimumRingSize(minimumRingSize)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withUseSourceIp
+
+```ts
+withUseSourceIp(useSourceIp)
+```
+
+"Hash based on the source IP address."
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie
+
+"Hash based on HTTP cookie."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.withName
+
+```ts
+withName(name)
+```
+
+"Name of the cookie."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.withPath
+
+```ts
+withPath(path)
+```
+
+"Path to set for the cookie."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.withTtl
+
+```ts
+withTtl(ttl)
+```
+
+"Lifetime of the cookie."
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withDistribute
+
+```ts
+withDistribute(distribute)
+```
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withDistributeMixin
+
+```ts
+withDistributeMixin(distribute)
+```
+
+"Optional: only one of distribute or failover can be set."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withEnabled
+
+```ts
+withEnabled(enabled)
+```
+
+"enable locality load balancing, this is DestinationRule-level and will override mesh wide settings in entirety."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withFailover
+
+```ts
+withFailover(failover)
+```
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withFailoverMixin
+
+```ts
+withFailoverMixin(failover)
+```
+
+"Optional: only failover or distribute can be set."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating locality, '/' separated, e.g."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute.withTo
+
+```ts
+withTo(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute.withToMixin
+
+```ts
+withToMixin(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating region."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover.withTo
+
+```ts
+withTo(to)
+```
+
+
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.outlierDetection
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withBaseEjectionTime
+
+```ts
+withBaseEjectionTime(baseEjectionTime)
+```
+
+"Minimum ejection duration."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withConsecutive5xxErrors
+
+```ts
+withConsecutive5xxErrors(consecutive5xxErrors)
+```
+
+"Number of 5xx errors before a host is ejected from the connection pool."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withConsecutiveErrors
+
+```ts
+withConsecutiveErrors(consecutiveErrors)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withConsecutiveGatewayErrors
+
+```ts
+withConsecutiveGatewayErrors(consecutiveGatewayErrors)
+```
+
+"Number of gateway errors before a host is ejected from the connection pool."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withConsecutiveLocalOriginFailures
+
+```ts
+withConsecutiveLocalOriginFailures(consecutiveLocalOriginFailures)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"Time interval between ejection sweep analysis."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withMaxEjectionPercent
+
+```ts
+withMaxEjectionPercent(maxEjectionPercent)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withMinHealthPercent
+
+```ts
+withMinHealthPercent(minHealthPercent)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.outlierDetection.withSplitExternalLocalOriginErrors
+
+```ts
+withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)
+```
+
+"Determines whether to distinguish local origin failures from external errors."
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.port
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.port.withNumber
+
+```ts
+withNumber(number)
+```
+
+
+
+## obj spec.subsets.trafficPolicy.portLevelSettings.tls
+
+"TLS related settings for connections to the upstream service."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withCaCertificates
+
+```ts
+withCaCertificates(caCertificates)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withClientCertificate
+
+```ts
+withClientCertificate(clientCertificate)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withCredentialName
+
+```ts
+withCredentialName(credentialName)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withMode
+
+```ts
+withMode(mode)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withPrivateKey
+
+```ts
+withPrivateKey(privateKey)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withSni
+
+```ts
+withSni(sni)
+```
+
+"SNI string to present to the server during TLS handshake."
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withSubjectAltNames
+
+```ts
+withSubjectAltNames(subjectAltNames)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.portLevelSettings.tls.withSubjectAltNamesMixin
+
+```ts
+withSubjectAltNamesMixin(subjectAltNames)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.subsets.trafficPolicy.tls
+
+"TLS related settings for connections to the upstream service."
+
+### fn spec.subsets.trafficPolicy.tls.withCaCertificates
+
+```ts
+withCaCertificates(caCertificates)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.tls.withClientCertificate
+
+```ts
+withClientCertificate(clientCertificate)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.subsets.trafficPolicy.tls.withCredentialName
+
+```ts
+withCredentialName(credentialName)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.tls.withMode
+
+```ts
+withMode(mode)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.tls.withPrivateKey
+
+```ts
+withPrivateKey(privateKey)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.subsets.trafficPolicy.tls.withSni
+
+```ts
+withSni(sni)
+```
+
+"SNI string to present to the server during TLS handshake."
+
+### fn spec.subsets.trafficPolicy.tls.withSubjectAltNames
+
+```ts
+withSubjectAltNames(subjectAltNames)
+```
+
+
+
+### fn spec.subsets.trafficPolicy.tls.withSubjectAltNamesMixin
+
+```ts
+withSubjectAltNamesMixin(subjectAltNames)
 ```
 
 
@@ -591,6 +1700,56 @@ withFailoverMixin(failover)
 
 **Note:** This function appends passed data to existing values
 
+## obj spec.trafficPolicy.loadBalancer.localityLbSetting.distribute
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.trafficPolicy.loadBalancer.localityLbSetting.distribute.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating locality, '/' separated, e.g."
+
+### fn spec.trafficPolicy.loadBalancer.localityLbSetting.distribute.withTo
+
+```ts
+withTo(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+### fn spec.trafficPolicy.loadBalancer.localityLbSetting.distribute.withToMixin
+
+```ts
+withToMixin(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.trafficPolicy.loadBalancer.localityLbSetting.failover
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.trafficPolicy.loadBalancer.localityLbSetting.failover.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating region."
+
+### fn spec.trafficPolicy.loadBalancer.localityLbSetting.failover.withTo
+
+```ts
+withTo(to)
+```
+
+
+
 ## obj spec.trafficPolicy.outlierDetection
 
 
@@ -666,6 +1825,454 @@ withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)
 ```
 
 "Determines whether to distinguish local origin failures from external errors."
+
+## obj spec.trafficPolicy.portLevelSettings
+
+"Traffic policies specific to individual ports."
+
+## obj spec.trafficPolicy.portLevelSettings.connectionPool
+
+
+
+## obj spec.trafficPolicy.portLevelSettings.connectionPool.http
+
+"HTTP connection pool settings."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.http.withH2UpgradePolicy
+
+```ts
+withH2UpgradePolicy(h2UpgradePolicy)
+```
+
+"Specify if http1.1 connection should be upgraded to http2 for the associated destination."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.http.withHttp1MaxPendingRequests
+
+```ts
+withHttp1MaxPendingRequests(http1MaxPendingRequests)
+```
+
+"Maximum number of pending HTTP requests to a destination."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.http.withHttp2MaxRequests
+
+```ts
+withHttp2MaxRequests(http2MaxRequests)
+```
+
+"Maximum number of requests to a backend."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.http.withIdleTimeout
+
+```ts
+withIdleTimeout(idleTimeout)
+```
+
+"The idle timeout for upstream connection pool connections."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.http.withMaxRequestsPerConnection
+
+```ts
+withMaxRequestsPerConnection(maxRequestsPerConnection)
+```
+
+"Maximum number of requests per connection to a backend."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.http.withMaxRetries
+
+```ts
+withMaxRetries(maxRetries)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.http.withUseClientProtocol
+
+```ts
+withUseClientProtocol(useClientProtocol)
+```
+
+"If set to true, client protocol will be preserved while initiating connection to backend."
+
+## obj spec.trafficPolicy.portLevelSettings.connectionPool.tcp
+
+"Settings common to both HTTP and TCP upstream connections."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.tcp.withConnectTimeout
+
+```ts
+withConnectTimeout(connectTimeout)
+```
+
+"TCP connection timeout."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.tcp.withMaxConnections
+
+```ts
+withMaxConnections(maxConnections)
+```
+
+"Maximum number of HTTP1 /TCP connections to a destination host."
+
+## obj spec.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive
+
+"If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"The time duration between keep-alive probes."
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.withProbes
+
+```ts
+withProbes(probes)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.connectionPool.tcp.tcpKeepalive.withTime
+
+```ts
+withTime(time)
+```
+
+
+
+## obj spec.trafficPolicy.portLevelSettings.loadBalancer
+
+"Settings controlling the load balancer algorithms."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.withSimple
+
+```ts
+withSimple(simple)
+```
+
+
+
+## obj spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withHttpHeaderName
+
+```ts
+withHttpHeaderName(httpHeaderName)
+```
+
+"Hash based on a specific HTTP header."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withHttpQueryParameterName
+
+```ts
+withHttpQueryParameterName(httpQueryParameterName)
+```
+
+"Hash based on a specific HTTP query parameter."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withMinimumRingSize
+
+```ts
+withMinimumRingSize(minimumRingSize)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.withUseSourceIp
+
+```ts
+withUseSourceIp(useSourceIp)
+```
+
+"Hash based on the source IP address."
+
+## obj spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie
+
+"Hash based on HTTP cookie."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.withName
+
+```ts
+withName(name)
+```
+
+"Name of the cookie."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.withPath
+
+```ts
+withPath(path)
+```
+
+"Path to set for the cookie."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.consistentHash.httpCookie.withTtl
+
+```ts
+withTtl(ttl)
+```
+
+"Lifetime of the cookie."
+
+## obj spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withDistribute
+
+```ts
+withDistribute(distribute)
+```
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withDistributeMixin
+
+```ts
+withDistributeMixin(distribute)
+```
+
+"Optional: only one of distribute or failover can be set."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withEnabled
+
+```ts
+withEnabled(enabled)
+```
+
+"enable locality load balancing, this is DestinationRule-level and will override mesh wide settings in entirety."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withFailover
+
+```ts
+withFailover(failover)
+```
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.withFailoverMixin
+
+```ts
+withFailoverMixin(failover)
+```
+
+"Optional: only failover or distribute can be set."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating locality, '/' separated, e.g."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute.withTo
+
+```ts
+withTo(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.distribute.withToMixin
+
+```ts
+withToMixin(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating region."
+
+### fn spec.trafficPolicy.portLevelSettings.loadBalancer.localityLbSetting.failover.withTo
+
+```ts
+withTo(to)
+```
+
+
+
+## obj spec.trafficPolicy.portLevelSettings.outlierDetection
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withBaseEjectionTime
+
+```ts
+withBaseEjectionTime(baseEjectionTime)
+```
+
+"Minimum ejection duration."
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withConsecutive5xxErrors
+
+```ts
+withConsecutive5xxErrors(consecutive5xxErrors)
+```
+
+"Number of 5xx errors before a host is ejected from the connection pool."
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withConsecutiveErrors
+
+```ts
+withConsecutiveErrors(consecutiveErrors)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withConsecutiveGatewayErrors
+
+```ts
+withConsecutiveGatewayErrors(consecutiveGatewayErrors)
+```
+
+"Number of gateway errors before a host is ejected from the connection pool."
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withConsecutiveLocalOriginFailures
+
+```ts
+withConsecutiveLocalOriginFailures(consecutiveLocalOriginFailures)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"Time interval between ejection sweep analysis."
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withMaxEjectionPercent
+
+```ts
+withMaxEjectionPercent(maxEjectionPercent)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withMinHealthPercent
+
+```ts
+withMinHealthPercent(minHealthPercent)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.outlierDetection.withSplitExternalLocalOriginErrors
+
+```ts
+withSplitExternalLocalOriginErrors(splitExternalLocalOriginErrors)
+```
+
+"Determines whether to distinguish local origin failures from external errors."
+
+## obj spec.trafficPolicy.portLevelSettings.port
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.port.withNumber
+
+```ts
+withNumber(number)
+```
+
+
+
+## obj spec.trafficPolicy.portLevelSettings.tls
+
+"TLS related settings for connections to the upstream service."
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withCaCertificates
+
+```ts
+withCaCertificates(caCertificates)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withClientCertificate
+
+```ts
+withClientCertificate(clientCertificate)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withCredentialName
+
+```ts
+withCredentialName(credentialName)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withMode
+
+```ts
+withMode(mode)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withPrivateKey
+
+```ts
+withPrivateKey(privateKey)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withSni
+
+```ts
+withSni(sni)
+```
+
+"SNI string to present to the server during TLS handshake."
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withSubjectAltNames
+
+```ts
+withSubjectAltNames(subjectAltNames)
+```
+
+
+
+### fn spec.trafficPolicy.portLevelSettings.tls.withSubjectAltNamesMixin
+
+```ts
+withSubjectAltNamesMixin(subjectAltNames)
+```
+
+
+
+**Note:** This function appends passed data to existing values
 
 ## obj spec.trafficPolicy.tls
 

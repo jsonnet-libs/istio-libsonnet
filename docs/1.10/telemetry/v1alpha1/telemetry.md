@@ -22,8 +22,6 @@ permalink: /1.10/telemetry/v1alpha1/telemetry/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -37,6 +35,15 @@ permalink: /1.10/telemetry/v1alpha1/telemetry/
   * [`obj spec.selector`](#obj-specselector)
     * [`fn withMatchLabels(matchLabels)`](#fn-specselectorwithmatchlabels)
     * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specselectorwithmatchlabelsmixin)
+  * [`obj spec.tracing`](#obj-spectracing)
+    * [`fn withCustomTags(customTags)`](#fn-spectracingwithcustomtags)
+    * [`fn withCustomTagsMixin(customTags)`](#fn-spectracingwithcustomtagsmixin)
+    * [`fn withDisableSpanReporting(disableSpanReporting)`](#fn-spectracingwithdisablespanreporting)
+    * [`fn withProviders(providers)`](#fn-spectracingwithproviders)
+    * [`fn withProvidersMixin(providers)`](#fn-spectracingwithprovidersmixin)
+    * [`fn withRandomSamplingPercentage(randomSamplingPercentage)`](#fn-spectracingwithrandomsamplingpercentage)
+    * [`obj spec.tracing.providers`](#obj-spectracingproviders)
+      * [`fn withName(name)`](#fn-spectracingproviderswithname)
 
 ## Fields
 
@@ -154,24 +161,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -273,3 +262,71 @@ withMatchLabelsMixin(matchLabels)
 
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.tracing
+
+"Optional."
+
+### fn spec.tracing.withCustomTags
+
+```ts
+withCustomTags(customTags)
+```
+
+"Optional."
+
+### fn spec.tracing.withCustomTagsMixin
+
+```ts
+withCustomTagsMixin(customTags)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.tracing.withDisableSpanReporting
+
+```ts
+withDisableSpanReporting(disableSpanReporting)
+```
+
+"Controls span reporting."
+
+### fn spec.tracing.withProviders
+
+```ts
+withProviders(providers)
+```
+
+"Optional."
+
+### fn spec.tracing.withProvidersMixin
+
+```ts
+withProvidersMixin(providers)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.tracing.withRandomSamplingPercentage
+
+```ts
+withRandomSamplingPercentage(randomSamplingPercentage)
+```
+
+
+
+## obj spec.tracing.providers
+
+"Optional."
+
+### fn spec.tracing.providers.withName
+
+```ts
+withName(name)
+```
+
+"Required."

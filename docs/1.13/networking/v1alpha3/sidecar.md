@@ -22,8 +22,6 @@ permalink: /1.13/networking/v1alpha3/sidecar/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -36,6 +34,42 @@ permalink: /1.13/networking/v1alpha3/sidecar/
   * [`fn withEgressMixin(egress)`](#fn-specwithegressmixin)
   * [`fn withIngress(ingress)`](#fn-specwithingress)
   * [`fn withIngressMixin(ingress)`](#fn-specwithingressmixin)
+  * [`obj spec.egress`](#obj-specegress)
+    * [`fn withBind(bind)`](#fn-specegresswithbind)
+    * [`fn withCaptureMode(captureMode)`](#fn-specegresswithcapturemode)
+    * [`fn withHosts(hosts)`](#fn-specegresswithhosts)
+    * [`fn withHostsMixin(hosts)`](#fn-specegresswithhostsmixin)
+    * [`obj spec.egress.port`](#obj-specegressport)
+      * [`fn withName(name)`](#fn-specegressportwithname)
+      * [`fn withNumber(number)`](#fn-specegressportwithnumber)
+      * [`fn withProtocol(protocol)`](#fn-specegressportwithprotocol)
+      * [`fn withTargetPort(targetPort)`](#fn-specegressportwithtargetport)
+  * [`obj spec.ingress`](#obj-specingress)
+    * [`fn withBind(bind)`](#fn-specingresswithbind)
+    * [`fn withCaptureMode(captureMode)`](#fn-specingresswithcapturemode)
+    * [`fn withDefaultEndpoint(defaultEndpoint)`](#fn-specingresswithdefaultendpoint)
+    * [`obj spec.ingress.port`](#obj-specingressport)
+      * [`fn withName(name)`](#fn-specingressportwithname)
+      * [`fn withNumber(number)`](#fn-specingressportwithnumber)
+      * [`fn withProtocol(protocol)`](#fn-specingressportwithprotocol)
+      * [`fn withTargetPort(targetPort)`](#fn-specingressportwithtargetport)
+    * [`obj spec.ingress.tls`](#obj-specingresstls)
+      * [`fn withCaCertificates(caCertificates)`](#fn-specingresstlswithcacertificates)
+      * [`fn withCipherSuites(cipherSuites)`](#fn-specingresstlswithciphersuites)
+      * [`fn withCipherSuitesMixin(cipherSuites)`](#fn-specingresstlswithciphersuitesmixin)
+      * [`fn withCredentialName(credentialName)`](#fn-specingresstlswithcredentialname)
+      * [`fn withHttpsRedirect(httpsRedirect)`](#fn-specingresstlswithhttpsredirect)
+      * [`fn withMaxProtocolVersion(maxProtocolVersion)`](#fn-specingresstlswithmaxprotocolversion)
+      * [`fn withMinProtocolVersion(minProtocolVersion)`](#fn-specingresstlswithminprotocolversion)
+      * [`fn withMode(mode)`](#fn-specingresstlswithmode)
+      * [`fn withPrivateKey(privateKey)`](#fn-specingresstlswithprivatekey)
+      * [`fn withServerCertificate(serverCertificate)`](#fn-specingresstlswithservercertificate)
+      * [`fn withSubjectAltNames(subjectAltNames)`](#fn-specingresstlswithsubjectaltnames)
+      * [`fn withSubjectAltNamesMixin(subjectAltNames)`](#fn-specingresstlswithsubjectaltnamesmixin)
+      * [`fn withVerifyCertificateHash(verifyCertificateHash)`](#fn-specingresstlswithverifycertificatehash)
+      * [`fn withVerifyCertificateHashMixin(verifyCertificateHash)`](#fn-specingresstlswithverifycertificatehashmixin)
+      * [`fn withVerifyCertificateSpki(verifyCertificateSpki)`](#fn-specingresstlswithverifycertificatespki)
+      * [`fn withVerifyCertificateSpkiMixin(verifyCertificateSpki)`](#fn-specingresstlswithverifycertificatespkimixin)
   * [`obj spec.outboundTrafficPolicy`](#obj-specoutboundtrafficpolicy)
     * [`fn withMode(mode)`](#fn-specoutboundtrafficpolicywithmode)
     * [`obj spec.outboundTrafficPolicy.egressProxy`](#obj-specoutboundtrafficpolicyegressproxy)
@@ -163,24 +197,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -273,6 +289,284 @@ withIngress(ingress)
 
 ```ts
 withIngressMixin(ingress)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.egress
+
+
+
+### fn spec.egress.withBind
+
+```ts
+withBind(bind)
+```
+
+
+
+### fn spec.egress.withCaptureMode
+
+```ts
+withCaptureMode(captureMode)
+```
+
+
+
+### fn spec.egress.withHosts
+
+```ts
+withHosts(hosts)
+```
+
+
+
+### fn spec.egress.withHostsMixin
+
+```ts
+withHostsMixin(hosts)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.egress.port
+
+"The port associated with the listener."
+
+### fn spec.egress.port.withName
+
+```ts
+withName(name)
+```
+
+"Label assigned to the port."
+
+### fn spec.egress.port.withNumber
+
+```ts
+withNumber(number)
+```
+
+"A valid non-negative integer port number."
+
+### fn spec.egress.port.withProtocol
+
+```ts
+withProtocol(protocol)
+```
+
+"The protocol exposed on the port."
+
+### fn spec.egress.port.withTargetPort
+
+```ts
+withTargetPort(targetPort)
+```
+
+
+
+## obj spec.ingress
+
+
+
+### fn spec.ingress.withBind
+
+```ts
+withBind(bind)
+```
+
+"The IP to which the listener should be bound."
+
+### fn spec.ingress.withCaptureMode
+
+```ts
+withCaptureMode(captureMode)
+```
+
+
+
+### fn spec.ingress.withDefaultEndpoint
+
+```ts
+withDefaultEndpoint(defaultEndpoint)
+```
+
+
+
+## obj spec.ingress.port
+
+"The port associated with the listener."
+
+### fn spec.ingress.port.withName
+
+```ts
+withName(name)
+```
+
+"Label assigned to the port."
+
+### fn spec.ingress.port.withNumber
+
+```ts
+withNumber(number)
+```
+
+"A valid non-negative integer port number."
+
+### fn spec.ingress.port.withProtocol
+
+```ts
+withProtocol(protocol)
+```
+
+"The protocol exposed on the port."
+
+### fn spec.ingress.port.withTargetPort
+
+```ts
+withTargetPort(targetPort)
+```
+
+
+
+## obj spec.ingress.tls
+
+
+
+### fn spec.ingress.tls.withCaCertificates
+
+```ts
+withCaCertificates(caCertificates)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.ingress.tls.withCipherSuites
+
+```ts
+withCipherSuites(cipherSuites)
+```
+
+"Optional: If specified, only support the specified cipher list."
+
+### fn spec.ingress.tls.withCipherSuitesMixin
+
+```ts
+withCipherSuitesMixin(cipherSuites)
+```
+
+"Optional: If specified, only support the specified cipher list."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.ingress.tls.withCredentialName
+
+```ts
+withCredentialName(credentialName)
+```
+
+
+
+### fn spec.ingress.tls.withHttpsRedirect
+
+```ts
+withHttpsRedirect(httpsRedirect)
+```
+
+
+
+### fn spec.ingress.tls.withMaxProtocolVersion
+
+```ts
+withMaxProtocolVersion(maxProtocolVersion)
+```
+
+"Optional: Maximum TLS protocol version."
+
+### fn spec.ingress.tls.withMinProtocolVersion
+
+```ts
+withMinProtocolVersion(minProtocolVersion)
+```
+
+"Optional: Minimum TLS protocol version."
+
+### fn spec.ingress.tls.withMode
+
+```ts
+withMode(mode)
+```
+
+
+
+### fn spec.ingress.tls.withPrivateKey
+
+```ts
+withPrivateKey(privateKey)
+```
+
+"REQUIRED if mode is `SIMPLE` or `MUTUAL`."
+
+### fn spec.ingress.tls.withServerCertificate
+
+```ts
+withServerCertificate(serverCertificate)
+```
+
+"REQUIRED if mode is `SIMPLE` or `MUTUAL`."
+
+### fn spec.ingress.tls.withSubjectAltNames
+
+```ts
+withSubjectAltNames(subjectAltNames)
+```
+
+
+
+### fn spec.ingress.tls.withSubjectAltNamesMixin
+
+```ts
+withSubjectAltNamesMixin(subjectAltNames)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.ingress.tls.withVerifyCertificateHash
+
+```ts
+withVerifyCertificateHash(verifyCertificateHash)
+```
+
+
+
+### fn spec.ingress.tls.withVerifyCertificateHashMixin
+
+```ts
+withVerifyCertificateHashMixin(verifyCertificateHash)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.ingress.tls.withVerifyCertificateSpki
+
+```ts
+withVerifyCertificateSpki(verifyCertificateSpki)
+```
+
+
+
+### fn spec.ingress.tls.withVerifyCertificateSpkiMixin
+
+```ts
+withVerifyCertificateSpkiMixin(verifyCertificateSpki)
 ```
 
 

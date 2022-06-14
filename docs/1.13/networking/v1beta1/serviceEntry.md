@@ -22,8 +22,6 @@ permalink: /1.13/networking/v1beta1/serviceEntry/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -46,6 +44,21 @@ permalink: /1.13/networking/v1beta1/serviceEntry/
   * [`fn withResolution(resolution)`](#fn-specwithresolution)
   * [`fn withSubjectAltNames(subjectAltNames)`](#fn-specwithsubjectaltnames)
   * [`fn withSubjectAltNamesMixin(subjectAltNames)`](#fn-specwithsubjectaltnamesmixin)
+  * [`obj spec.endpoints`](#obj-specendpoints)
+    * [`fn withAddress(address)`](#fn-specendpointswithaddress)
+    * [`fn withLabels(labels)`](#fn-specendpointswithlabels)
+    * [`fn withLabelsMixin(labels)`](#fn-specendpointswithlabelsmixin)
+    * [`fn withLocality(locality)`](#fn-specendpointswithlocality)
+    * [`fn withNetwork(network)`](#fn-specendpointswithnetwork)
+    * [`fn withPorts(ports)`](#fn-specendpointswithports)
+    * [`fn withPortsMixin(ports)`](#fn-specendpointswithportsmixin)
+    * [`fn withServiceAccount(serviceAccount)`](#fn-specendpointswithserviceaccount)
+    * [`fn withWeight(weight)`](#fn-specendpointswithweight)
+  * [`obj spec.ports`](#obj-specports)
+    * [`fn withName(name)`](#fn-specportswithname)
+    * [`fn withNumber(number)`](#fn-specportswithnumber)
+    * [`fn withProtocol(protocol)`](#fn-specportswithprotocol)
+    * [`fn withTargetPort(targetPort)`](#fn-specportswithtargetport)
   * [`obj spec.workloadSelector`](#obj-specworkloadselector)
     * [`fn withLabels(labels)`](#fn-specworkloadselectorwithlabels)
     * [`fn withLabelsMixin(labels)`](#fn-specworkloadselectorwithlabelsmixin)
@@ -163,24 +176,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -369,6 +364,122 @@ withSubjectAltNamesMixin(subjectAltNames)
 
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.endpoints
+
+"One or more endpoints associated with the service."
+
+### fn spec.endpoints.withAddress
+
+```ts
+withAddress(address)
+```
+
+
+
+### fn spec.endpoints.withLabels
+
+```ts
+withLabels(labels)
+```
+
+"One or more labels associated with the endpoint."
+
+### fn spec.endpoints.withLabelsMixin
+
+```ts
+withLabelsMixin(labels)
+```
+
+"One or more labels associated with the endpoint."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.endpoints.withLocality
+
+```ts
+withLocality(locality)
+```
+
+"The locality associated with the endpoint."
+
+### fn spec.endpoints.withNetwork
+
+```ts
+withNetwork(network)
+```
+
+
+
+### fn spec.endpoints.withPorts
+
+```ts
+withPorts(ports)
+```
+
+"Set of ports associated with the endpoint."
+
+### fn spec.endpoints.withPortsMixin
+
+```ts
+withPortsMixin(ports)
+```
+
+"Set of ports associated with the endpoint."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.endpoints.withServiceAccount
+
+```ts
+withServiceAccount(serviceAccount)
+```
+
+
+
+### fn spec.endpoints.withWeight
+
+```ts
+withWeight(weight)
+```
+
+"The load balancing weight associated with the endpoint."
+
+## obj spec.ports
+
+"The ports associated with the external service."
+
+### fn spec.ports.withName
+
+```ts
+withName(name)
+```
+
+"Label assigned to the port."
+
+### fn spec.ports.withNumber
+
+```ts
+withNumber(number)
+```
+
+"A valid non-negative integer port number."
+
+### fn spec.ports.withProtocol
+
+```ts
+withProtocol(protocol)
+```
+
+"The protocol exposed on the port."
+
+### fn spec.ports.withTargetPort
+
+```ts
+withTargetPort(targetPort)
+```
+
+
 
 ## obj spec.workloadSelector
 

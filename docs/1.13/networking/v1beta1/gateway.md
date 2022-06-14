@@ -22,8 +22,6 @@ permalink: /1.13/networking/v1beta1/gateway/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -36,6 +34,34 @@ permalink: /1.13/networking/v1beta1/gateway/
   * [`fn withSelectorMixin(selector)`](#fn-specwithselectormixin)
   * [`fn withServers(servers)`](#fn-specwithservers)
   * [`fn withServersMixin(servers)`](#fn-specwithserversmixin)
+  * [`obj spec.servers`](#obj-specservers)
+    * [`fn withBind(bind)`](#fn-specserverswithbind)
+    * [`fn withDefaultEndpoint(defaultEndpoint)`](#fn-specserverswithdefaultendpoint)
+    * [`fn withHosts(hosts)`](#fn-specserverswithhosts)
+    * [`fn withHostsMixin(hosts)`](#fn-specserverswithhostsmixin)
+    * [`fn withName(name)`](#fn-specserverswithname)
+    * [`obj spec.servers.port`](#obj-specserversport)
+      * [`fn withName(name)`](#fn-specserversportwithname)
+      * [`fn withNumber(number)`](#fn-specserversportwithnumber)
+      * [`fn withProtocol(protocol)`](#fn-specserversportwithprotocol)
+      * [`fn withTargetPort(targetPort)`](#fn-specserversportwithtargetport)
+    * [`obj spec.servers.tls`](#obj-specserverstls)
+      * [`fn withCaCertificates(caCertificates)`](#fn-specserverstlswithcacertificates)
+      * [`fn withCipherSuites(cipherSuites)`](#fn-specserverstlswithciphersuites)
+      * [`fn withCipherSuitesMixin(cipherSuites)`](#fn-specserverstlswithciphersuitesmixin)
+      * [`fn withCredentialName(credentialName)`](#fn-specserverstlswithcredentialname)
+      * [`fn withHttpsRedirect(httpsRedirect)`](#fn-specserverstlswithhttpsredirect)
+      * [`fn withMaxProtocolVersion(maxProtocolVersion)`](#fn-specserverstlswithmaxprotocolversion)
+      * [`fn withMinProtocolVersion(minProtocolVersion)`](#fn-specserverstlswithminprotocolversion)
+      * [`fn withMode(mode)`](#fn-specserverstlswithmode)
+      * [`fn withPrivateKey(privateKey)`](#fn-specserverstlswithprivatekey)
+      * [`fn withServerCertificate(serverCertificate)`](#fn-specserverstlswithservercertificate)
+      * [`fn withSubjectAltNames(subjectAltNames)`](#fn-specserverstlswithsubjectaltnames)
+      * [`fn withSubjectAltNamesMixin(subjectAltNames)`](#fn-specserverstlswithsubjectaltnamesmixin)
+      * [`fn withVerifyCertificateHash(verifyCertificateHash)`](#fn-specserverstlswithverifycertificatehash)
+      * [`fn withVerifyCertificateHashMixin(verifyCertificateHash)`](#fn-specserverstlswithverifycertificatehashmixin)
+      * [`fn withVerifyCertificateSpki(verifyCertificateSpki)`](#fn-specserverstlswithverifycertificatespki)
+      * [`fn withVerifyCertificateSpkiMixin(verifyCertificateSpki)`](#fn-specserverstlswithverifycertificatespkimixin)
 
 ## Fields
 
@@ -153,24 +179,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -266,5 +274,227 @@ withServersMixin(servers)
 ```
 
 "A list of server specifications."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.servers
+
+"A list of server specifications."
+
+### fn spec.servers.withBind
+
+```ts
+withBind(bind)
+```
+
+
+
+### fn spec.servers.withDefaultEndpoint
+
+```ts
+withDefaultEndpoint(defaultEndpoint)
+```
+
+
+
+### fn spec.servers.withHosts
+
+```ts
+withHosts(hosts)
+```
+
+"One or more hosts exposed by this gateway."
+
+### fn spec.servers.withHostsMixin
+
+```ts
+withHostsMixin(hosts)
+```
+
+"One or more hosts exposed by this gateway."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.servers.withName
+
+```ts
+withName(name)
+```
+
+"An optional name of the server, when set must be unique across all servers."
+
+## obj spec.servers.port
+
+
+
+### fn spec.servers.port.withName
+
+```ts
+withName(name)
+```
+
+"Label assigned to the port."
+
+### fn spec.servers.port.withNumber
+
+```ts
+withNumber(number)
+```
+
+"A valid non-negative integer port number."
+
+### fn spec.servers.port.withProtocol
+
+```ts
+withProtocol(protocol)
+```
+
+"The protocol exposed on the port."
+
+### fn spec.servers.port.withTargetPort
+
+```ts
+withTargetPort(targetPort)
+```
+
+
+
+## obj spec.servers.tls
+
+"Set of TLS related options that govern the server's behavior."
+
+### fn spec.servers.tls.withCaCertificates
+
+```ts
+withCaCertificates(caCertificates)
+```
+
+"REQUIRED if mode is `MUTUAL`."
+
+### fn spec.servers.tls.withCipherSuites
+
+```ts
+withCipherSuites(cipherSuites)
+```
+
+"Optional: If specified, only support the specified cipher list."
+
+### fn spec.servers.tls.withCipherSuitesMixin
+
+```ts
+withCipherSuitesMixin(cipherSuites)
+```
+
+"Optional: If specified, only support the specified cipher list."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.servers.tls.withCredentialName
+
+```ts
+withCredentialName(credentialName)
+```
+
+
+
+### fn spec.servers.tls.withHttpsRedirect
+
+```ts
+withHttpsRedirect(httpsRedirect)
+```
+
+
+
+### fn spec.servers.tls.withMaxProtocolVersion
+
+```ts
+withMaxProtocolVersion(maxProtocolVersion)
+```
+
+"Optional: Maximum TLS protocol version."
+
+### fn spec.servers.tls.withMinProtocolVersion
+
+```ts
+withMinProtocolVersion(minProtocolVersion)
+```
+
+"Optional: Minimum TLS protocol version."
+
+### fn spec.servers.tls.withMode
+
+```ts
+withMode(mode)
+```
+
+
+
+### fn spec.servers.tls.withPrivateKey
+
+```ts
+withPrivateKey(privateKey)
+```
+
+"REQUIRED if mode is `SIMPLE` or `MUTUAL`."
+
+### fn spec.servers.tls.withServerCertificate
+
+```ts
+withServerCertificate(serverCertificate)
+```
+
+"REQUIRED if mode is `SIMPLE` or `MUTUAL`."
+
+### fn spec.servers.tls.withSubjectAltNames
+
+```ts
+withSubjectAltNames(subjectAltNames)
+```
+
+
+
+### fn spec.servers.tls.withSubjectAltNamesMixin
+
+```ts
+withSubjectAltNamesMixin(subjectAltNames)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.servers.tls.withVerifyCertificateHash
+
+```ts
+withVerifyCertificateHash(verifyCertificateHash)
+```
+
+
+
+### fn spec.servers.tls.withVerifyCertificateHashMixin
+
+```ts
+withVerifyCertificateHashMixin(verifyCertificateHash)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.servers.tls.withVerifyCertificateSpki
+
+```ts
+withVerifyCertificateSpki(verifyCertificateSpki)
+```
+
+
+
+### fn spec.servers.tls.withVerifyCertificateSpkiMixin
+
+```ts
+withVerifyCertificateSpkiMixin(verifyCertificateSpki)
+```
+
+
 
 **Note:** This function appends passed data to existing values

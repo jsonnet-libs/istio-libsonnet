@@ -22,8 +22,6 @@ permalink: /1.13/networking/v1alpha3/envoyFilter/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -35,6 +33,48 @@ permalink: /1.13/networking/v1alpha3/envoyFilter/
   * [`fn withConfigPatches(configPatches)`](#fn-specwithconfigpatches)
   * [`fn withConfigPatchesMixin(configPatches)`](#fn-specwithconfigpatchesmixin)
   * [`fn withPriority(priority)`](#fn-specwithpriority)
+  * [`obj spec.configPatches`](#obj-specconfigpatches)
+    * [`fn withApplyTo(applyTo)`](#fn-specconfigpatcheswithapplyto)
+    * [`obj spec.configPatches.match`](#obj-specconfigpatchesmatch)
+      * [`fn withContext(context)`](#fn-specconfigpatchesmatchwithcontext)
+      * [`obj spec.configPatches.match.cluster`](#obj-specconfigpatchesmatchcluster)
+        * [`fn withName(name)`](#fn-specconfigpatchesmatchclusterwithname)
+        * [`fn withPortNumber(portNumber)`](#fn-specconfigpatchesmatchclusterwithportnumber)
+        * [`fn withService(service)`](#fn-specconfigpatchesmatchclusterwithservice)
+        * [`fn withSubset(subset)`](#fn-specconfigpatchesmatchclusterwithsubset)
+      * [`obj spec.configPatches.match.listener`](#obj-specconfigpatchesmatchlistener)
+        * [`fn withName(name)`](#fn-specconfigpatchesmatchlistenerwithname)
+        * [`fn withPortName(portName)`](#fn-specconfigpatchesmatchlistenerwithportname)
+        * [`fn withPortNumber(portNumber)`](#fn-specconfigpatchesmatchlistenerwithportnumber)
+        * [`obj spec.configPatches.match.listener.filterChain`](#obj-specconfigpatchesmatchlistenerfilterchain)
+          * [`fn withApplicationProtocols(applicationProtocols)`](#fn-specconfigpatchesmatchlistenerfilterchainwithapplicationprotocols)
+          * [`fn withDestinationPort(destinationPort)`](#fn-specconfigpatchesmatchlistenerfilterchainwithdestinationport)
+          * [`fn withName(name)`](#fn-specconfigpatchesmatchlistenerfilterchainwithname)
+          * [`fn withSni(sni)`](#fn-specconfigpatchesmatchlistenerfilterchainwithsni)
+          * [`fn withTransportProtocol(transportProtocol)`](#fn-specconfigpatchesmatchlistenerfilterchainwithtransportprotocol)
+          * [`obj spec.configPatches.match.listener.filterChain.filter`](#obj-specconfigpatchesmatchlistenerfilterchainfilter)
+            * [`fn withName(name)`](#fn-specconfigpatchesmatchlistenerfilterchainfilterwithname)
+            * [`obj spec.configPatches.match.listener.filterChain.filter.subFilter`](#obj-specconfigpatchesmatchlistenerfilterchainfiltersubfilter)
+              * [`fn withName(name)`](#fn-specconfigpatchesmatchlistenerfilterchainfiltersubfilterwithname)
+      * [`obj spec.configPatches.match.proxy`](#obj-specconfigpatchesmatchproxy)
+        * [`fn withMetadata(metadata)`](#fn-specconfigpatchesmatchproxywithmetadata)
+        * [`fn withMetadataMixin(metadata)`](#fn-specconfigpatchesmatchproxywithmetadatamixin)
+        * [`fn withProxyVersion(proxyVersion)`](#fn-specconfigpatchesmatchproxywithproxyversion)
+      * [`obj spec.configPatches.match.routeConfiguration`](#obj-specconfigpatchesmatchrouteconfiguration)
+        * [`fn withGateway(gateway)`](#fn-specconfigpatchesmatchrouteconfigurationwithgateway)
+        * [`fn withName(name)`](#fn-specconfigpatchesmatchrouteconfigurationwithname)
+        * [`fn withPortName(portName)`](#fn-specconfigpatchesmatchrouteconfigurationwithportname)
+        * [`fn withPortNumber(portNumber)`](#fn-specconfigpatchesmatchrouteconfigurationwithportnumber)
+        * [`obj spec.configPatches.match.routeConfiguration.vhost`](#obj-specconfigpatchesmatchrouteconfigurationvhost)
+          * [`fn withName(name)`](#fn-specconfigpatchesmatchrouteconfigurationvhostwithname)
+          * [`obj spec.configPatches.match.routeConfiguration.vhost.route`](#obj-specconfigpatchesmatchrouteconfigurationvhostroute)
+            * [`fn withAction(action)`](#fn-specconfigpatchesmatchrouteconfigurationvhostroutewithaction)
+            * [`fn withName(name)`](#fn-specconfigpatchesmatchrouteconfigurationvhostroutewithname)
+    * [`obj spec.configPatches.patch`](#obj-specconfigpatchespatch)
+      * [`fn withFilterClass(filterClass)`](#fn-specconfigpatchespatchwithfilterclass)
+      * [`fn withOperation(operation)`](#fn-specconfigpatchespatchwithoperation)
+      * [`fn withValue(value)`](#fn-specconfigpatchespatchwithvalue)
+      * [`fn withValueMixin(value)`](#fn-specconfigpatchespatchwithvaluemixin)
   * [`obj spec.workloadSelector`](#obj-specworkloadselector)
     * [`fn withLabels(labels)`](#fn-specworkloadselectorwithlabels)
     * [`fn withLabelsMixin(labels)`](#fn-specworkloadselectorwithlabelsmixin)
@@ -155,24 +195,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -260,6 +282,298 @@ withPriority(priority)
 ```
 
 "Priority defines the order in which patch sets are applied within a context."
+
+## obj spec.configPatches
+
+"One or more patches with match conditions."
+
+### fn spec.configPatches.withApplyTo
+
+```ts
+withApplyTo(applyTo)
+```
+
+
+
+## obj spec.configPatches.match
+
+"Match on listener/route configuration/cluster."
+
+### fn spec.configPatches.match.withContext
+
+```ts
+withContext(context)
+```
+
+"The specific config generation context to match on."
+
+## obj spec.configPatches.match.cluster
+
+"Match on envoy cluster attributes."
+
+### fn spec.configPatches.match.cluster.withName
+
+```ts
+withName(name)
+```
+
+"The exact name of the cluster to match."
+
+### fn spec.configPatches.match.cluster.withPortNumber
+
+```ts
+withPortNumber(portNumber)
+```
+
+"The service port for which this cluster was generated."
+
+### fn spec.configPatches.match.cluster.withService
+
+```ts
+withService(service)
+```
+
+"The fully qualified service name for this cluster."
+
+### fn spec.configPatches.match.cluster.withSubset
+
+```ts
+withSubset(subset)
+```
+
+"The subset associated with the service."
+
+## obj spec.configPatches.match.listener
+
+"Match on envoy listener attributes."
+
+### fn spec.configPatches.match.listener.withName
+
+```ts
+withName(name)
+```
+
+"Match a specific listener by its name."
+
+### fn spec.configPatches.match.listener.withPortName
+
+```ts
+withPortName(portName)
+```
+
+
+
+### fn spec.configPatches.match.listener.withPortNumber
+
+```ts
+withPortNumber(portNumber)
+```
+
+
+
+## obj spec.configPatches.match.listener.filterChain
+
+"Match a specific filter chain in a listener."
+
+### fn spec.configPatches.match.listener.filterChain.withApplicationProtocols
+
+```ts
+withApplicationProtocols(applicationProtocols)
+```
+
+"Applies only to sidecars."
+
+### fn spec.configPatches.match.listener.filterChain.withDestinationPort
+
+```ts
+withDestinationPort(destinationPort)
+```
+
+"The destination_port value used by a filter chain's match condition."
+
+### fn spec.configPatches.match.listener.filterChain.withName
+
+```ts
+withName(name)
+```
+
+"The name assigned to the filter chain."
+
+### fn spec.configPatches.match.listener.filterChain.withSni
+
+```ts
+withSni(sni)
+```
+
+"The SNI value used by a filter chain's match condition."
+
+### fn spec.configPatches.match.listener.filterChain.withTransportProtocol
+
+```ts
+withTransportProtocol(transportProtocol)
+```
+
+"Applies only to `SIDECAR_INBOUND` context."
+
+## obj spec.configPatches.match.listener.filterChain.filter
+
+"The name of a specific filter to apply the patch to."
+
+### fn spec.configPatches.match.listener.filterChain.filter.withName
+
+```ts
+withName(name)
+```
+
+"The filter name to match on."
+
+## obj spec.configPatches.match.listener.filterChain.filter.subFilter
+
+
+
+### fn spec.configPatches.match.listener.filterChain.filter.subFilter.withName
+
+```ts
+withName(name)
+```
+
+"The filter name to match on."
+
+## obj spec.configPatches.match.proxy
+
+"Match on properties associated with a proxy."
+
+### fn spec.configPatches.match.proxy.withMetadata
+
+```ts
+withMetadata(metadata)
+```
+
+
+
+### fn spec.configPatches.match.proxy.withMetadataMixin
+
+```ts
+withMetadataMixin(metadata)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.configPatches.match.proxy.withProxyVersion
+
+```ts
+withProxyVersion(proxyVersion)
+```
+
+
+
+## obj spec.configPatches.match.routeConfiguration
+
+"Match on envoy HTTP route configuration attributes."
+
+### fn spec.configPatches.match.routeConfiguration.withGateway
+
+```ts
+withGateway(gateway)
+```
+
+
+
+### fn spec.configPatches.match.routeConfiguration.withName
+
+```ts
+withName(name)
+```
+
+"Route configuration name to match on."
+
+### fn spec.configPatches.match.routeConfiguration.withPortName
+
+```ts
+withPortName(portName)
+```
+
+"Applicable only for GATEWAY context."
+
+### fn spec.configPatches.match.routeConfiguration.withPortNumber
+
+```ts
+withPortNumber(portNumber)
+```
+
+
+
+## obj spec.configPatches.match.routeConfiguration.vhost
+
+
+
+### fn spec.configPatches.match.routeConfiguration.vhost.withName
+
+```ts
+withName(name)
+```
+
+
+
+## obj spec.configPatches.match.routeConfiguration.vhost.route
+
+"Match a specific route within the virtual host."
+
+### fn spec.configPatches.match.routeConfiguration.vhost.route.withAction
+
+```ts
+withAction(action)
+```
+
+"Match a route with specific action type."
+
+### fn spec.configPatches.match.routeConfiguration.vhost.route.withName
+
+```ts
+withName(name)
+```
+
+
+
+## obj spec.configPatches.patch
+
+"The patch to apply along with the operation."
+
+### fn spec.configPatches.patch.withFilterClass
+
+```ts
+withFilterClass(filterClass)
+```
+
+"Determines the filter insertion order."
+
+### fn spec.configPatches.patch.withOperation
+
+```ts
+withOperation(operation)
+```
+
+"Determines how the patch should be applied."
+
+### fn spec.configPatches.patch.withValue
+
+```ts
+withValue(value)
+```
+
+"The JSON config of the object being patched."
+
+### fn spec.configPatches.patch.withValueMixin
+
+```ts
+withValueMixin(value)
+```
+
+"The JSON config of the object being patched."
+
+**Note:** This function appends passed data to existing values
 
 ## obj spec.workloadSelector
 

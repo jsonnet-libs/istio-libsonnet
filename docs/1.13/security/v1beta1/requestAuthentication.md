@@ -22,8 +22,6 @@ permalink: /1.13/security/v1beta1/requestAuthentication/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -34,6 +32,22 @@ permalink: /1.13/security/v1beta1/requestAuthentication/
 * [`obj spec`](#obj-spec)
   * [`fn withJwtRules(jwtRules)`](#fn-specwithjwtrules)
   * [`fn withJwtRulesMixin(jwtRules)`](#fn-specwithjwtrulesmixin)
+  * [`obj spec.jwtRules`](#obj-specjwtrules)
+    * [`fn withAudiences(audiences)`](#fn-specjwtruleswithaudiences)
+    * [`fn withAudiencesMixin(audiences)`](#fn-specjwtruleswithaudiencesmixin)
+    * [`fn withForwardOriginalToken(forwardOriginalToken)`](#fn-specjwtruleswithforwardoriginaltoken)
+    * [`fn withFromHeaders(fromHeaders)`](#fn-specjwtruleswithfromheaders)
+    * [`fn withFromHeadersMixin(fromHeaders)`](#fn-specjwtruleswithfromheadersmixin)
+    * [`fn withFromParams(fromParams)`](#fn-specjwtruleswithfromparams)
+    * [`fn withFromParamsMixin(fromParams)`](#fn-specjwtruleswithfromparamsmixin)
+    * [`fn withIssuer(issuer)`](#fn-specjwtruleswithissuer)
+    * [`fn withJwks(jwks)`](#fn-specjwtruleswithjwks)
+    * [`fn withJwksUri(jwksUri)`](#fn-specjwtruleswithjwksuri)
+    * [`fn withJwks_uri(jwks_uri)`](#fn-specjwtruleswithjwks_uri)
+    * [`fn withOutputPayloadToHeader(outputPayloadToHeader)`](#fn-specjwtruleswithoutputpayloadtoheader)
+    * [`obj spec.jwtRules.fromHeaders`](#obj-specjwtrulesfromheaders)
+      * [`fn withName(name)`](#fn-specjwtrulesfromheaderswithname)
+      * [`fn withPrefix(prefix)`](#fn-specjwtrulesfromheaderswithprefix)
   * [`obj spec.selector`](#obj-specselector)
     * [`fn withMatchLabels(matchLabels)`](#fn-specselectorwithmatchlabels)
     * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specselectorwithmatchlabelsmixin)
@@ -154,24 +168,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -251,6 +247,132 @@ withJwtRulesMixin(jwtRules)
 "Define the list of JWTs that can be validated at the selected workloads' proxy."
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.jwtRules
+
+"Define the list of JWTs that can be validated at the selected workloads' proxy."
+
+### fn spec.jwtRules.withAudiences
+
+```ts
+withAudiences(audiences)
+```
+
+
+
+### fn spec.jwtRules.withAudiencesMixin
+
+```ts
+withAudiencesMixin(audiences)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.jwtRules.withForwardOriginalToken
+
+```ts
+withForwardOriginalToken(forwardOriginalToken)
+```
+
+"If set to true, the original token will be kept for the upstream request."
+
+### fn spec.jwtRules.withFromHeaders
+
+```ts
+withFromHeaders(fromHeaders)
+```
+
+"List of header locations from which JWT is expected."
+
+### fn spec.jwtRules.withFromHeadersMixin
+
+```ts
+withFromHeadersMixin(fromHeaders)
+```
+
+"List of header locations from which JWT is expected."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.jwtRules.withFromParams
+
+```ts
+withFromParams(fromParams)
+```
+
+"List of query parameters from which JWT is expected."
+
+### fn spec.jwtRules.withFromParamsMixin
+
+```ts
+withFromParamsMixin(fromParams)
+```
+
+"List of query parameters from which JWT is expected."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.jwtRules.withIssuer
+
+```ts
+withIssuer(issuer)
+```
+
+"Identifies the issuer that issued the JWT."
+
+### fn spec.jwtRules.withJwks
+
+```ts
+withJwks(jwks)
+```
+
+"JSON Web Key Set of public keys to validate signature of the JWT."
+
+### fn spec.jwtRules.withJwksUri
+
+```ts
+withJwksUri(jwksUri)
+```
+
+
+
+### fn spec.jwtRules.withJwks_uri
+
+```ts
+withJwks_uri(jwks_uri)
+```
+
+
+
+### fn spec.jwtRules.withOutputPayloadToHeader
+
+```ts
+withOutputPayloadToHeader(outputPayloadToHeader)
+```
+
+
+
+## obj spec.jwtRules.fromHeaders
+
+"List of header locations from which JWT is expected."
+
+### fn spec.jwtRules.fromHeaders.withName
+
+```ts
+withName(name)
+```
+
+"The HTTP header name."
+
+### fn spec.jwtRules.fromHeaders.withPrefix
+
+```ts
+withPrefix(prefix)
+```
+
+"The prefix that should be stripped before decoding the token."
 
 ## obj spec.selector
 

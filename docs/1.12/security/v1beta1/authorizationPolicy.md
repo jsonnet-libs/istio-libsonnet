@@ -22,8 +22,6 @@ permalink: /1.12/security/v1beta1/authorizationPolicy/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -37,6 +35,59 @@ permalink: /1.12/security/v1beta1/authorizationPolicy/
   * [`fn withRulesMixin(rules)`](#fn-specwithrulesmixin)
   * [`obj spec.provider`](#obj-specprovider)
     * [`fn withName(name)`](#fn-specproviderwithname)
+  * [`obj spec.rules`](#obj-specrules)
+    * [`fn withFrom(from)`](#fn-specruleswithfrom)
+    * [`fn withFromMixin(from)`](#fn-specruleswithfrommixin)
+    * [`fn withTo(to)`](#fn-specruleswithto)
+    * [`fn withToMixin(to)`](#fn-specruleswithtomixin)
+    * [`fn withWhen(when)`](#fn-specruleswithwhen)
+    * [`fn withWhenMixin(when)`](#fn-specruleswithwhenmixin)
+    * [`obj spec.rules.from`](#obj-specrulesfrom)
+      * [`obj spec.rules.from.source`](#obj-specrulesfromsource)
+        * [`fn withIpBlocks(ipBlocks)`](#fn-specrulesfromsourcewithipblocks)
+        * [`fn withIpBlocksMixin(ipBlocks)`](#fn-specrulesfromsourcewithipblocksmixin)
+        * [`fn withNamespaces(namespaces)`](#fn-specrulesfromsourcewithnamespaces)
+        * [`fn withNamespacesMixin(namespaces)`](#fn-specrulesfromsourcewithnamespacesmixin)
+        * [`fn withNotIpBlocks(notIpBlocks)`](#fn-specrulesfromsourcewithnotipblocks)
+        * [`fn withNotIpBlocksMixin(notIpBlocks)`](#fn-specrulesfromsourcewithnotipblocksmixin)
+        * [`fn withNotNamespaces(notNamespaces)`](#fn-specrulesfromsourcewithnotnamespaces)
+        * [`fn withNotNamespacesMixin(notNamespaces)`](#fn-specrulesfromsourcewithnotnamespacesmixin)
+        * [`fn withNotPrincipals(notPrincipals)`](#fn-specrulesfromsourcewithnotprincipals)
+        * [`fn withNotPrincipalsMixin(notPrincipals)`](#fn-specrulesfromsourcewithnotprincipalsmixin)
+        * [`fn withNotRemoteIpBlocks(notRemoteIpBlocks)`](#fn-specrulesfromsourcewithnotremoteipblocks)
+        * [`fn withNotRemoteIpBlocksMixin(notRemoteIpBlocks)`](#fn-specrulesfromsourcewithnotremoteipblocksmixin)
+        * [`fn withNotRequestPrincipals(notRequestPrincipals)`](#fn-specrulesfromsourcewithnotrequestprincipals)
+        * [`fn withNotRequestPrincipalsMixin(notRequestPrincipals)`](#fn-specrulesfromsourcewithnotrequestprincipalsmixin)
+        * [`fn withPrincipals(principals)`](#fn-specrulesfromsourcewithprincipals)
+        * [`fn withPrincipalsMixin(principals)`](#fn-specrulesfromsourcewithprincipalsmixin)
+        * [`fn withRemoteIpBlocks(remoteIpBlocks)`](#fn-specrulesfromsourcewithremoteipblocks)
+        * [`fn withRemoteIpBlocksMixin(remoteIpBlocks)`](#fn-specrulesfromsourcewithremoteipblocksmixin)
+        * [`fn withRequestPrincipals(requestPrincipals)`](#fn-specrulesfromsourcewithrequestprincipals)
+        * [`fn withRequestPrincipalsMixin(requestPrincipals)`](#fn-specrulesfromsourcewithrequestprincipalsmixin)
+    * [`obj spec.rules.to`](#obj-specrulesto)
+      * [`obj spec.rules.to.operation`](#obj-specrulestooperation)
+        * [`fn withHosts(hosts)`](#fn-specrulestooperationwithhosts)
+        * [`fn withHostsMixin(hosts)`](#fn-specrulestooperationwithhostsmixin)
+        * [`fn withMethods(methods)`](#fn-specrulestooperationwithmethods)
+        * [`fn withMethodsMixin(methods)`](#fn-specrulestooperationwithmethodsmixin)
+        * [`fn withNotHosts(notHosts)`](#fn-specrulestooperationwithnothosts)
+        * [`fn withNotHostsMixin(notHosts)`](#fn-specrulestooperationwithnothostsmixin)
+        * [`fn withNotMethods(notMethods)`](#fn-specrulestooperationwithnotmethods)
+        * [`fn withNotMethodsMixin(notMethods)`](#fn-specrulestooperationwithnotmethodsmixin)
+        * [`fn withNotPaths(notPaths)`](#fn-specrulestooperationwithnotpaths)
+        * [`fn withNotPathsMixin(notPaths)`](#fn-specrulestooperationwithnotpathsmixin)
+        * [`fn withNotPorts(notPorts)`](#fn-specrulestooperationwithnotports)
+        * [`fn withNotPortsMixin(notPorts)`](#fn-specrulestooperationwithnotportsmixin)
+        * [`fn withPaths(paths)`](#fn-specrulestooperationwithpaths)
+        * [`fn withPathsMixin(paths)`](#fn-specrulestooperationwithpathsmixin)
+        * [`fn withPorts(ports)`](#fn-specrulestooperationwithports)
+        * [`fn withPortsMixin(ports)`](#fn-specrulestooperationwithportsmixin)
+    * [`obj spec.rules.when`](#obj-specruleswhen)
+      * [`fn withKey(key)`](#fn-specruleswhenwithkey)
+      * [`fn withNotValues(notValues)`](#fn-specruleswhenwithnotvalues)
+      * [`fn withNotValuesMixin(notValues)`](#fn-specruleswhenwithnotvaluesmixin)
+      * [`fn withValues(values)`](#fn-specruleswhenwithvalues)
+      * [`fn withValuesMixin(values)`](#fn-specruleswhenwithvaluesmixin)
   * [`obj spec.selector`](#obj-specselector)
     * [`fn withMatchLabels(matchLabels)`](#fn-specselectorwithmatchlabels)
     * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specselectorwithmatchlabelsmixin)
@@ -157,24 +208,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -274,6 +307,452 @@ withName(name)
 ```
 
 "Specifies the name of the extension provider."
+
+## obj spec.rules
+
+"Optional."
+
+### fn spec.rules.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Optional."
+
+### fn spec.rules.withFromMixin
+
+```ts
+withFromMixin(from)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.withTo
+
+```ts
+withTo(to)
+```
+
+"Optional."
+
+### fn spec.rules.withToMixin
+
+```ts
+withToMixin(to)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.withWhen
+
+```ts
+withWhen(when)
+```
+
+"Optional."
+
+### fn spec.rules.withWhenMixin
+
+```ts
+withWhenMixin(when)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.rules.from
+
+"Optional."
+
+## obj spec.rules.from.source
+
+"Source specifies the source of a request."
+
+### fn spec.rules.from.source.withIpBlocks
+
+```ts
+withIpBlocks(ipBlocks)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withIpBlocksMixin
+
+```ts
+withIpBlocksMixin(ipBlocks)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withNamespaces
+
+```ts
+withNamespaces(namespaces)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withNamespacesMixin
+
+```ts
+withNamespacesMixin(namespaces)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withNotIpBlocks
+
+```ts
+withNotIpBlocks(notIpBlocks)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withNotIpBlocksMixin
+
+```ts
+withNotIpBlocksMixin(notIpBlocks)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withNotNamespaces
+
+```ts
+withNotNamespaces(notNamespaces)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withNotNamespacesMixin
+
+```ts
+withNotNamespacesMixin(notNamespaces)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withNotPrincipals
+
+```ts
+withNotPrincipals(notPrincipals)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withNotPrincipalsMixin
+
+```ts
+withNotPrincipalsMixin(notPrincipals)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withNotRemoteIpBlocks
+
+```ts
+withNotRemoteIpBlocks(notRemoteIpBlocks)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withNotRemoteIpBlocksMixin
+
+```ts
+withNotRemoteIpBlocksMixin(notRemoteIpBlocks)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withNotRequestPrincipals
+
+```ts
+withNotRequestPrincipals(notRequestPrincipals)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withNotRequestPrincipalsMixin
+
+```ts
+withNotRequestPrincipalsMixin(notRequestPrincipals)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withPrincipals
+
+```ts
+withPrincipals(principals)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withPrincipalsMixin
+
+```ts
+withPrincipalsMixin(principals)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withRemoteIpBlocks
+
+```ts
+withRemoteIpBlocks(remoteIpBlocks)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withRemoteIpBlocksMixin
+
+```ts
+withRemoteIpBlocksMixin(remoteIpBlocks)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.from.source.withRequestPrincipals
+
+```ts
+withRequestPrincipals(requestPrincipals)
+```
+
+"Optional."
+
+### fn spec.rules.from.source.withRequestPrincipalsMixin
+
+```ts
+withRequestPrincipalsMixin(requestPrincipals)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.rules.to
+
+"Optional."
+
+## obj spec.rules.to.operation
+
+"Operation specifies the operation of a request."
+
+### fn spec.rules.to.operation.withHosts
+
+```ts
+withHosts(hosts)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withHostsMixin
+
+```ts
+withHostsMixin(hosts)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.to.operation.withMethods
+
+```ts
+withMethods(methods)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withMethodsMixin
+
+```ts
+withMethodsMixin(methods)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.to.operation.withNotHosts
+
+```ts
+withNotHosts(notHosts)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withNotHostsMixin
+
+```ts
+withNotHostsMixin(notHosts)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.to.operation.withNotMethods
+
+```ts
+withNotMethods(notMethods)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withNotMethodsMixin
+
+```ts
+withNotMethodsMixin(notMethods)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.to.operation.withNotPaths
+
+```ts
+withNotPaths(notPaths)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withNotPathsMixin
+
+```ts
+withNotPathsMixin(notPaths)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.to.operation.withNotPorts
+
+```ts
+withNotPorts(notPorts)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withNotPortsMixin
+
+```ts
+withNotPortsMixin(notPorts)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.to.operation.withPaths
+
+```ts
+withPaths(paths)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withPathsMixin
+
+```ts
+withPathsMixin(paths)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.to.operation.withPorts
+
+```ts
+withPorts(ports)
+```
+
+"Optional."
+
+### fn spec.rules.to.operation.withPortsMixin
+
+```ts
+withPortsMixin(ports)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.rules.when
+
+"Optional."
+
+### fn spec.rules.when.withKey
+
+```ts
+withKey(key)
+```
+
+"The name of an Istio attribute."
+
+### fn spec.rules.when.withNotValues
+
+```ts
+withNotValues(notValues)
+```
+
+"Optional."
+
+### fn spec.rules.when.withNotValuesMixin
+
+```ts
+withNotValuesMixin(notValues)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.rules.when.withValues
+
+```ts
+withValues(values)
+```
+
+"Optional."
+
+### fn spec.rules.when.withValuesMixin
+
+```ts
+withValuesMixin(values)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
 
 ## obj spec.selector
 

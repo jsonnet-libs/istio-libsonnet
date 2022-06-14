@@ -22,8 +22,6 @@ permalink: /1.12/telemetry/v1alpha1/telemetry/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -38,9 +36,39 @@ permalink: /1.12/telemetry/v1alpha1/telemetry/
   * [`fn withMetricsMixin(metrics)`](#fn-specwithmetricsmixin)
   * [`fn withTracing(tracing)`](#fn-specwithtracing)
   * [`fn withTracingMixin(tracing)`](#fn-specwithtracingmixin)
+  * [`obj spec.accessLogging`](#obj-specaccesslogging)
+    * [`fn withDisabled(disabled)`](#fn-specaccessloggingwithdisabled)
+    * [`fn withProviders(providers)`](#fn-specaccessloggingwithproviders)
+    * [`fn withProvidersMixin(providers)`](#fn-specaccessloggingwithprovidersmixin)
+    * [`obj spec.accessLogging.providers`](#obj-specaccessloggingproviders)
+      * [`fn withName(name)`](#fn-specaccessloggingproviderswithname)
+  * [`obj spec.metrics`](#obj-specmetrics)
+    * [`fn withOverrides(overrides)`](#fn-specmetricswithoverrides)
+    * [`fn withOverridesMixin(overrides)`](#fn-specmetricswithoverridesmixin)
+    * [`fn withProviders(providers)`](#fn-specmetricswithproviders)
+    * [`fn withProvidersMixin(providers)`](#fn-specmetricswithprovidersmixin)
+    * [`obj spec.metrics.overrides`](#obj-specmetricsoverrides)
+      * [`fn withDisabled(disabled)`](#fn-specmetricsoverrideswithdisabled)
+      * [`fn withTagOverrides(tagOverrides)`](#fn-specmetricsoverrideswithtagoverrides)
+      * [`fn withTagOverridesMixin(tagOverrides)`](#fn-specmetricsoverrideswithtagoverridesmixin)
+      * [`obj spec.metrics.overrides.match`](#obj-specmetricsoverridesmatch)
+        * [`fn withCustomMetric(customMetric)`](#fn-specmetricsoverridesmatchwithcustommetric)
+        * [`fn withMetric(metric)`](#fn-specmetricsoverridesmatchwithmetric)
+        * [`fn withMode(mode)`](#fn-specmetricsoverridesmatchwithmode)
+    * [`obj spec.metrics.providers`](#obj-specmetricsproviders)
+      * [`fn withName(name)`](#fn-specmetricsproviderswithname)
   * [`obj spec.selector`](#obj-specselector)
     * [`fn withMatchLabels(matchLabels)`](#fn-specselectorwithmatchlabels)
     * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specselectorwithmatchlabelsmixin)
+  * [`obj spec.tracing`](#obj-spectracing)
+    * [`fn withCustomTags(customTags)`](#fn-spectracingwithcustomtags)
+    * [`fn withCustomTagsMixin(customTags)`](#fn-spectracingwithcustomtagsmixin)
+    * [`fn withDisableSpanReporting(disableSpanReporting)`](#fn-spectracingwithdisablespanreporting)
+    * [`fn withProviders(providers)`](#fn-spectracingwithproviders)
+    * [`fn withProvidersMixin(providers)`](#fn-spectracingwithprovidersmixin)
+    * [`fn withRandomSamplingPercentage(randomSamplingPercentage)`](#fn-spectracingwithrandomsamplingpercentage)
+    * [`obj spec.tracing.providers`](#obj-spectracingproviders)
+      * [`fn withName(name)`](#fn-spectracingproviderswithname)
 
 ## Fields
 
@@ -155,24 +183,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -292,6 +302,158 @@ withTracingMixin(tracing)
 
 **Note:** This function appends passed data to existing values
 
+## obj spec.accessLogging
+
+"Optional."
+
+### fn spec.accessLogging.withDisabled
+
+```ts
+withDisabled(disabled)
+```
+
+"Controls logging."
+
+### fn spec.accessLogging.withProviders
+
+```ts
+withProviders(providers)
+```
+
+"Optional."
+
+### fn spec.accessLogging.withProvidersMixin
+
+```ts
+withProvidersMixin(providers)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.accessLogging.providers
+
+"Optional."
+
+### fn spec.accessLogging.providers.withName
+
+```ts
+withName(name)
+```
+
+"Required."
+
+## obj spec.metrics
+
+"Optional."
+
+### fn spec.metrics.withOverrides
+
+```ts
+withOverrides(overrides)
+```
+
+"Optional."
+
+### fn spec.metrics.withOverridesMixin
+
+```ts
+withOverridesMixin(overrides)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.metrics.withProviders
+
+```ts
+withProviders(providers)
+```
+
+"Optional."
+
+### fn spec.metrics.withProvidersMixin
+
+```ts
+withProvidersMixin(providers)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.metrics.overrides
+
+"Optional."
+
+### fn spec.metrics.overrides.withDisabled
+
+```ts
+withDisabled(disabled)
+```
+
+"Optional."
+
+### fn spec.metrics.overrides.withTagOverrides
+
+```ts
+withTagOverrides(tagOverrides)
+```
+
+"Optional."
+
+### fn spec.metrics.overrides.withTagOverridesMixin
+
+```ts
+withTagOverridesMixin(tagOverrides)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.metrics.overrides.match
+
+"Match allows provides the scope of the override."
+
+### fn spec.metrics.overrides.match.withCustomMetric
+
+```ts
+withCustomMetric(customMetric)
+```
+
+"Allows free-form specification of a metric."
+
+### fn spec.metrics.overrides.match.withMetric
+
+```ts
+withMetric(metric)
+```
+
+"One of the well-known Istio Standard Metrics."
+
+### fn spec.metrics.overrides.match.withMode
+
+```ts
+withMode(mode)
+```
+
+"Controls which mode of metrics generation is selected: CLIENT and/or SERVER."
+
+## obj spec.metrics.providers
+
+"Optional."
+
+### fn spec.metrics.providers.withName
+
+```ts
+withName(name)
+```
+
+"Required."
+
 ## obj spec.selector
 
 "Optional."
@@ -313,3 +475,71 @@ withMatchLabelsMixin(matchLabels)
 
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.tracing
+
+"Optional."
+
+### fn spec.tracing.withCustomTags
+
+```ts
+withCustomTags(customTags)
+```
+
+"Optional."
+
+### fn spec.tracing.withCustomTagsMixin
+
+```ts
+withCustomTagsMixin(customTags)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.tracing.withDisableSpanReporting
+
+```ts
+withDisableSpanReporting(disableSpanReporting)
+```
+
+"Controls span reporting."
+
+### fn spec.tracing.withProviders
+
+```ts
+withProviders(providers)
+```
+
+"Optional."
+
+### fn spec.tracing.withProvidersMixin
+
+```ts
+withProvidersMixin(providers)
+```
+
+"Optional."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.tracing.withRandomSamplingPercentage
+
+```ts
+withRandomSamplingPercentage(randomSamplingPercentage)
+```
+
+
+
+## obj spec.tracing.providers
+
+"Optional."
+
+### fn spec.tracing.providers.withName
+
+```ts
+withName(name)
+```
+
+"Required."
