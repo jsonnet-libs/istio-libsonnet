@@ -123,10 +123,22 @@ permalink: /1.16/networking/v1alpha3/virtualService/
         * [`fn withExact(exact)`](#fn-spechttpmatchauthoritywithexact)
         * [`fn withPrefix(prefix)`](#fn-spechttpmatchauthoritywithprefix)
         * [`fn withRegex(regex)`](#fn-spechttpmatchauthoritywithregex)
+      * [`obj spec.http.match.headers`](#obj-spechttpmatchheaders)
+        * [`fn withExact(header, value)`](#fn-spechttpmatchheaderswithexact)
+        * [`fn withExactMixin(header, value)`](#fn-spechttpmatchheaderswithexactmixin)
+        * [`fn withPrefix(header, value)`](#fn-spechttpmatchheaderswithprefix)
+        * [`fn withPrefixMixin(header, value)`](#fn-spechttpmatchheaderswithprefixmixin)
+        * [`fn withRegex(header, value)`](#fn-spechttpmatchheaderswithregex)
+        * [`fn withRegexMixin(header, value)`](#fn-spechttpmatchheaderswithregexmixin)
       * [`obj spec.http.match.method`](#obj-spechttpmatchmethod)
         * [`fn withExact(exact)`](#fn-spechttpmatchmethodwithexact)
         * [`fn withPrefix(prefix)`](#fn-spechttpmatchmethodwithprefix)
         * [`fn withRegex(regex)`](#fn-spechttpmatchmethodwithregex)
+      * [`obj spec.http.match.queryParams`](#obj-spechttpmatchqueryparams)
+        * [`fn withExact(key, value)`](#fn-spechttpmatchqueryparamswithexact)
+        * [`fn withExactMixin(key, value)`](#fn-spechttpmatchqueryparamswithexactmixin)
+        * [`fn withRegex(key, value)`](#fn-spechttpmatchqueryparamswithregex)
+        * [`fn withRegexMixin(key, value)`](#fn-spechttpmatchqueryparamswithregexmixin)
       * [`obj spec.http.match.scheme`](#obj-spechttpmatchscheme)
         * [`fn withExact(exact)`](#fn-spechttpmatchschemewithexact)
         * [`fn withPrefix(prefix)`](#fn-spechttpmatchschemewithprefix)
@@ -135,6 +147,13 @@ permalink: /1.16/networking/v1alpha3/virtualService/
         * [`fn withExact(exact)`](#fn-spechttpmatchuriwithexact)
         * [`fn withPrefix(prefix)`](#fn-spechttpmatchuriwithprefix)
         * [`fn withRegex(regex)`](#fn-spechttpmatchuriwithregex)
+      * [`obj spec.http.match.withoutHeaders`](#obj-spechttpmatchwithoutheaders)
+        * [`fn withExact(header, value)`](#fn-spechttpmatchwithoutheaderswithexact)
+        * [`fn withExactMixin(header, value)`](#fn-spechttpmatchwithoutheaderswithexactmixin)
+        * [`fn withPrefix(header, value)`](#fn-spechttpmatchwithoutheaderswithprefix)
+        * [`fn withPrefixMixin(header, value)`](#fn-spechttpmatchwithoutheaderswithprefixmixin)
+        * [`fn withRegex(header, value)`](#fn-spechttpmatchwithoutheaderswithregex)
+        * [`fn withRegexMixin(header, value)`](#fn-spechttpmatchwithoutheaderswithregexmixin)
     * [`obj spec.http.mirror`](#obj-spechttpmirror)
       * [`fn withHost(host)`](#fn-spechttpmirrorwithhost)
       * [`fn withSubset(subset)`](#fn-spechttpmirrorwithsubset)
@@ -1131,6 +1150,58 @@ withRegex(regex)
 
 "RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax)."
 
+## obj spec.http.match.headers
+
+
+
+### fn spec.http.match.headers.withExact
+
+```ts
+withExact(header, value)
+```
+
+`withExact` matches the header in an exact string
+
+### fn spec.http.match.headers.withExactMixin
+
+```ts
+withExactMixin(header, value)
+```
+
+`withExact` matches the header in an exact string
+
+### fn spec.http.match.headers.withPrefix
+
+```ts
+withPrefix(header, value)
+```
+
+`withPrefix` matches the header in an prefix-based
+
+### fn spec.http.match.headers.withPrefixMixin
+
+```ts
+withPrefixMixin(header, value)
+```
+
+`withPrefix` matches the header in an prefix-based
+
+### fn spec.http.match.headers.withRegex
+
+```ts
+withRegex(header, value)
+```
+
+`withRegex` matches the header in an RE2 style regex-based
+
+### fn spec.http.match.headers.withRegexMixin
+
+```ts
+withRegexMixin(header, value)
+```
+
+`withRegex` matches the header in an RE2 style regex-based
+
 ## obj spec.http.match.method
 
 
@@ -1158,6 +1229,42 @@ withRegex(regex)
 ```
 
 "RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax)."
+
+## obj spec.http.match.queryParams
+
+
+
+### fn spec.http.match.queryParams.withExact
+
+```ts
+withExact(key, value)
+```
+
+`withExact` matches the header in an exact string
+
+### fn spec.http.match.queryParams.withExactMixin
+
+```ts
+withExactMixin(key, value)
+```
+
+`withExact` matches the header in an exact string
+
+### fn spec.http.match.queryParams.withRegex
+
+```ts
+withRegex(key, value)
+```
+
+`withRegex` matches the header in an RE2 style regex-based
+
+### fn spec.http.match.queryParams.withRegexMixin
+
+```ts
+withRegexMixin(key, value)
+```
+
+`withRegex` matches the header in an RE2 style regex-based
 
 ## obj spec.http.match.scheme
 
@@ -1214,6 +1321,58 @@ withRegex(regex)
 ```
 
 "RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax)."
+
+## obj spec.http.match.withoutHeaders
+
+
+
+### fn spec.http.match.withoutHeaders.withExact
+
+```ts
+withExact(header, value)
+```
+
+`withExact` matches the header in an exact string
+
+### fn spec.http.match.withoutHeaders.withExactMixin
+
+```ts
+withExactMixin(header, value)
+```
+
+`withExact` matches the header in an exact string
+
+### fn spec.http.match.withoutHeaders.withPrefix
+
+```ts
+withPrefix(header, value)
+```
+
+`withPrefix` matches the header in an prefix-based
+
+### fn spec.http.match.withoutHeaders.withPrefixMixin
+
+```ts
+withPrefixMixin(header, value)
+```
+
+`withPrefix` matches the header in an prefix-based
+
+### fn spec.http.match.withoutHeaders.withRegex
+
+```ts
+withRegex(header, value)
+```
+
+`withRegex` matches the header in an RE2 style regex-based
+
+### fn spec.http.match.withoutHeaders.withRegexMixin
+
+```ts
+withRegexMixin(header, value)
+```
+
+`withRegex` matches the header in an RE2 style regex-based
 
 ## obj spec.http.mirror
 

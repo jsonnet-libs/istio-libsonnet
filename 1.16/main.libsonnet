@@ -1,1 +1,1 @@
-(import 'gen.libsonnet')
+(import 'gen.libsonnet') + (import '_custom/virtualservice.libsonnet')
