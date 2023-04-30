@@ -72,7 +72,6 @@ permalink: /1.16/networking/v1alpha3/virtualService/
       * [`fn withName(name)`](#fn-spechttpdelegatewithname)
       * [`fn withNamespace(namespace)`](#fn-spechttpdelegatewithnamespace)
     * [`obj spec.http.directResponse`](#obj-spechttpdirectresponse)
-      * [`fn withStatus(status)`](#fn-spechttpdirectresponsewithstatus)
       * [`obj spec.http.directResponse.body`](#obj-spechttpdirectresponsebody)
         * [`fn withBytes(bytes)`](#fn-spechttpdirectresponsebodywithbytes)
         * [`fn withString(string)`](#fn-spechttpdirectresponsebodywithstring)
@@ -764,14 +763,6 @@ withNamespace(namespace)
 ## obj spec.http.directResponse
 
 "A HTTP rule can either return a direct_response, redirect or forward (default) traffic."
-
-### fn spec.http.directResponse.withStatus
-
-```ts
-withStatus(status)
-```
-
-"Specifies the HTTP response status to be returned."
 
 ## obj spec.http.directResponse.body
 
