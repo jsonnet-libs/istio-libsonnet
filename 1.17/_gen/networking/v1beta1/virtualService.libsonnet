@@ -103,6 +103,8 @@
           '#withString':: d.fn(help='', args=[d.arg(name='string', type=d.T.string)]),
           withString(string): { directResponse+: { body+: { string: string } } },
         },
+        '#withStatus':: d.fn(help='"Specifies the HTTP response status to be returned."', args=[d.arg(name='status', type=d.T.integer)]),
+        withStatus(status): { directResponse+: { status: status } },
       },
       '#fault':: d.obj(help='"Fault injection policy to apply on HTTP traffic at the client side."'),
       fault: {
