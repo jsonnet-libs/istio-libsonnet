@@ -2,687 +2,687 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/extensions/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/extensions/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/extensions/v1alpha1/wasmPlugin/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/envoyFilter/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1alpha3/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/proxyConfig/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/networking/v1beta1/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/v1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/v1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/v1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/v1beta1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/v1beta1/peerAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/security/v1beta1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/telemetry/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.17/telemetry/v1alpha1/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/extensions/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/extensions/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/extensions/v1alpha1/wasmPlugin/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/envoyFilter/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1alpha3/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/proxyConfig/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/networking/v1beta1/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/v1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/v1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/v1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/v1beta1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/v1beta1/peerAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/security/v1beta1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/telemetry/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.18/telemetry/v1alpha1/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/extensions/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/extensions/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/extensions/v1alpha1/wasmPlugin/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/envoyFilter/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1alpha3/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/proxyConfig/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/networking/v1beta1/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/v1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/v1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/v1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/v1beta1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/v1beta1/peerAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/security/v1beta1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/telemetry/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.19/telemetry/v1alpha1/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/extensions/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/extensions/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/extensions/v1alpha1/wasmPlugin/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/envoyFilter/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1alpha3/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/destinationRule/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/gateway/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/proxyConfig/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/serviceEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/sidecar/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/virtualService/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/workloadEntry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/networking/v1beta1/workloadGroup/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/v1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/v1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/v1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/v1beta1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/v1beta1/authorizationPolicy/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/v1beta1/peerAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/security/v1beta1/requestAuthentication/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/telemetry/v1alpha1/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/istio-libsonnet/1.20/telemetry/v1alpha1/telemetry/</loc>
-         <lastmod>2023-12-21</lastmod>
+         <lastmod>2024-03-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
