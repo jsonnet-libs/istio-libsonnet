@@ -1,11 +1,11 @@
 ---
-permalink: /1.24/
+permalink: /1.25/
 ---
 
 # istio
 
 ```jsonnet
-local istio = import "github.com/jsonnet-libs/istio-libsonnet/1.24/main.libsonnet"
+local istio = import "github.com/jsonnet-libs/istio-libsonnet/1.25/main.libsonnet"
 ```
 
 
